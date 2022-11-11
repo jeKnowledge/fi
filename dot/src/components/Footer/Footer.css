@@ -1,0 +1,94 @@
+.app_footer {
+    background-color: #4EF279;
+    
+    height:250px;
+    width:100%;
+    display:flex;
+    position: fixed;
+    bottom: 0;
+   
+}
+
+.app_footer_contactos {
+    
+    width:33.3%;
+    display:inline-block;
+   
+    position:relative;
+    padding: 10px 60px;
+    
+   
+    
+}
+
+.app_footer_contactos h1 {
+    font-size:  28px;
+    line-height: 38px;
+    text-align: center;
+    position:relative;
+}
+
+.contacto_1 h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    
+}
+.contacto_1 p {
+    font-weight:500;
+    font-size: 15px;
+    line-height: 20px;
+
+}
+
+.app_footer_criado  {
+    display:inline-block;
+    width:33.3%;
+    
+    padding:0px;
+    position:relative;
+   
+   
+}
+
+.app_footer_criado h1 {
+    text-align:center;
+    position:relative;
+    font-size:  28px;
+    line-height: 38px;
+    
+   
+   
+}
+
+.app_footer_patrocinios {
+    
+    width:33.3%;
+    margin-left:0px;
+    
+}
+
+.app_footer_patrocinios h1 {
+    text-align:center;
+    position:relative;
+    font-size:  28px;
+    line-height: 38px;
+    
+    
+   
+   
+}
+
+.app_footer_deloitte {
+    text-align:center
+}
+
+.app_footer_images {
+    text-align: center;
+}
+.app_footer_dei {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
