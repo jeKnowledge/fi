@@ -6,6 +6,7 @@ const Footer = () => {
 
     return (
         <footer className="app_footer">
+            
             <div className='app_footer_contactos'>
             <h1 className="nav_letter">Contactos</h1>
                 <div className="contacto_1 nav_letter">

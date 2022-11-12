@@ -1,12 +1,13 @@
 .app_footer {
     background-color: #4EF279;
     
-    height:250px;
+    height:30%;
     width:100%;
     display:flex;
     position: fixed;
     bottom: 0;
-   
+    position:relative;
+ 
 }
 
 .app_footer_contactos {
@@ -15,56 +16,62 @@
     display:inline-block;
    
     position:relative;
-    padding: 10px 60px;
+    padding: 0px 60px;
     
    
     
 }
 
 .app_footer_contactos h1 {
+    
     font-size:  28px;
-    line-height: 38px;
+    line-height: 15px;
     text-align: center;
     position:relative;
 }
 
 .contacto_1 h2{
+    padding:5px;
     font-weight: 500;
     font-size: 20px;
-    line-height: 27px;
-    
+    line-height: 10px;
+    position:relative;
 }
 .contacto_1 p {
     font-weight:500;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 10px;
+    position:relative;
 
 }
 
 .app_footer_criado  {
+    padding: 0px 60px;
     display:inline-block;
     width:33.3%;
-    
-    padding:0px;
     position:relative;
+    
    
    
 }
 
 .app_footer_criado h1 {
+    
     text-align:center;
     position:relative;
     font-size:  28px;
-    line-height: 38px;
+    line-height: 25px;
     
    
    
 }
 
+
+
 .app_footer_patrocinios {
-    
+    padding: 0px 60px;
     width:33.3%;
-    margin-left:0px;
+    margin-left:0px
     
 }
 
@@ -72,21 +79,21 @@
     text-align:center;
     position:relative;
     font-size:  28px;
-    line-height: 38px;
+    line-height:  15px;
     
-    
-   
-   
 }
 
 .app_footer_deloitte {
+    height:59px;
     text-align:center
 }
 
 .app_footer_images {
+    height:24px;
     text-align: center;
 }
 .app_footer_dei {
+    height:21px;
     margin-top: 10px;
     text-align: center;
 }

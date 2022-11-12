@@ -5,9 +5,10 @@
   background: url('./assets/background.png');
   background-position: center;
   background-size: cover;
-  background-repeat: repeat;
+  
   background-attachment: fixed;
   background-color: black;
+
   
 }
 
