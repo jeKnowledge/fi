@@ -1,6 +1,7 @@
 import React from 'react'
-import {Navbar, Evento, Onde, Organizacao} from './components'
+import {Navbar, Onde, Organizacao} from './components'
 import './App.css';
+import {Evento,Faq} from './containers'
 
 const App = () => {
   let Component
@@ -15,7 +16,7 @@ const App = () => {
       Component = Organizacao
       break
     case "/Faq":
-      Component = Onde
+      Component = Faq
       break
     default:
       Component = Evento
