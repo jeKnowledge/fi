@@ -1,4 +1,4 @@
-
+@import url('https://fonts.cdnfonts.com/css/avenir');
 
 .app_bg {
   
@@ -12,7 +12,7 @@
 }
 
 .nav_letter {
-  font-family: 'Avenir Next';
+  font-family: 'Avenir';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;

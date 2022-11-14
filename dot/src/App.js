@@ -17,6 +17,9 @@ const App = () => {
     case "/Faq":
       Component = Onde
       break
+    default:
+      Component = Evento
+      break
     
   }
   return (

@@ -1,8 +1,11 @@
 import background from '../assets/background.png'
-
 import logo from '../assets/logo.png'
+import dei from '../assets/dei.png'
 
-export default {
-    logo,
+const images = {
     background,
+    logo,
+    dei
 }
+
+export default images
