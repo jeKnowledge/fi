@@ -6,6 +6,7 @@ import quebratour_logo from '../assets/quebratour_logo.png'
 import ydata_logo from '../assets/ydata_logo.png'
 import void_logo from '../assets/void_logo.png'
 import logo_frontpage from '../assets/logo_frontpage.png'
+import dei from '../assets/dei.png'
 // eslint-disable-next-line
 export default {
     logo,
@@ -16,4 +17,5 @@ export default {
     ydata_logo,
     void_logo,
     logo_frontpage,
+    dei,
 };

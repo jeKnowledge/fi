@@ -1,10 +1,12 @@
 import React from 'react';
 import images from '../../constants/images'
+import Navbar from '../Navbar/Navbar'
 import './Onde.css'
 
 const Onde = () => {
     return (
-        <onde className="app_onde app_bg">
+        <div className="app_onde app_bg">
+            <Navbar/>
             <div className="app_onde_text">
                 <div className="app_onde_header">
                     Departamento de
@@ -18,7 +20,7 @@ const Onde = () => {
             <div className="app_onde_dei">
                 <img src={images.dei} alt="dei" />
             </div>
-        </onde>
+        </div>
     )
 }
 

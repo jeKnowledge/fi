@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, Onde, Organizacao} from './components'
+import {Onde, Organizacao} from './components'
 import './App.css';
 import {Evento,Faq} from './containers'
 
@@ -25,7 +25,6 @@ const App = () => {
   }
   return (
     <div className="App">
-      <Navbar/>
       <Component/>
     </div>
   );
