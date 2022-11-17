@@ -1,99 +1,115 @@
 .app_navbar {
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    position:relative;
-    height:100px;
-    
-  
-    
-   
+    position: relative;
+    height: 15%;
+}
+
+.app_navbar_logo img {
+    margin-top: 10%;
+    position: relative;
 }
 
 .app_navbar_logo {
+    position: relative;
+    display: flex;
 
-    display:flex;
-    justify-content: flex-start;
     align-items: center;
-    position:relative;
-    top:10%;
-    left:25px;
+    position: relative;
+    left: 4rem;
 
+    height: 30px;
 }
+
 
 .app_navbar_components {
-  position:relative;
-  display:flex;
-  
-  margin-left:auto;
-  margin-right:50px;
+    position: relative;
+    display: flex;
 
-
-
-
-  
-  
-
+    margin-left: auto;
+    margin-right: 50px;
 }
-.app_navbar_links  {
-    
+
+.app_navbar_links {
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items:right;
+    align-items: right;
     list-style: none;
-    gap:50px;
-    
-   
-    
+    gap: 50px;
 }
 
 .app_navbar-links li {
-  
-   
-  
-    cursor:pointer;
-
+    cursor: pointer;
 }
 
 
-.app_navbar_box{
-    
-    margin-right:50px;
+.app_navbar_box {
+    margin-right: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:5px;
-    
-  
+    padding: 5px;
+    position: relative;
     box-sizing: border-box;
-    
     border: 2px solid #4EF279;
     border-radius: 12px;
-
 }
 
 .app_navbar_box li {
     list-style: none;
     text-align: center;
-    
+
 }
 
 .app_navbar_inscricao {
-    
-    position:relative;
+    position: relative;
     color: #4EF279;
-    font-family: 'Avenir Next';
+    font-family: 'Avenir';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
     text-transform: uppercase;
-    
-    
-    
-
-   
 }
 
+@media screen and (max-width:958px) {
+    .app_navbar_links {
+        gap: 15px;
+    }
+
+    .app_navbar_links a {
+        font-size: 15px;
+    }
+
+    .app_navbar_inscricao {
+        font-size: 15px;
+    }
+
+    .app_navbar_logo {
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width: 738px) {
+    .app_navbar_logo {
+        left: 1rem;
+    }
+
+    .app_navbar_links {
+        gap: 10px;
+    }
+
+    .app_navbar_box {
+        margin-right: 1rem;
+    }
+
+    .app_navbar_components {
+        margin-right: 25px;
+    }
+}
+
+/*659*/

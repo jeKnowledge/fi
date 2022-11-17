@@ -1,6 +1,7 @@
 import React from 'react'
-import {Navbar, Onde, Organizacao, Evento} from './components'
+import {Onde, Organizacao} from './components'
 import './App.css';
+import {Evento,Faq} from './containers'
 
 const App = () => {
   let Component
@@ -15,13 +16,15 @@ const App = () => {
       Component = Organizacao
       break
     case "/Faq":
-      Component = Onde
+      Component = Faq
+      break
+    default:
+      Component = Evento
       break
     
   }
   return (
     <div className="App">
-      <Navbar/>
       <Component/>
     </div>
   );
