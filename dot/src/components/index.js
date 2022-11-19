@@ -1,8 +1,7 @@
 import Navbar from './Navbar/Navbar'
-import Onde from './Onde/Onde'
-import Organizacao from './Organizacao/Organizacao'
 import Footer from './Footer/Footer'
+import Card from './Card/Card'
 
 export {
-    Navbar, Onde, Organizacao,Footer,
+    Navbar, Footer, Card
 }

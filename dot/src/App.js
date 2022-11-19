@@ -1,7 +1,6 @@
 import React from 'react'
-import {Onde, Organizacao} from './components'
 import './App.css';
-import {Evento,Faq} from './containers'
+import {Evento,Onde, Organizacao, Faq} from './containers'
 
 const App = () => {
   let Component

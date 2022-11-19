@@ -7,6 +7,8 @@ import ydata_logo from '../assets/ydata_logo.png'
 import void_logo from '../assets/void_logo.png'
 import logo_frontpage from '../assets/logo_frontpage.png'
 import dei from '../assets/dei.png'
+import logojek from '../assets/logojek.png'
+import logojest from '../assets/logojest.png'
 // eslint-disable-next-line
 export default {
     logo,
@@ -18,4 +20,6 @@ export default {
     void_logo,
     logo_frontpage,
     dei,
+    logojest,
+    logojek,
 };
