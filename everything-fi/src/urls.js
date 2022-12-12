@@ -1,0 +1,5 @@
+const DEFAULT = ''
+
+export {
+    DEFAULT,
+}
