@@ -1,1 +1,4 @@
-
+.Home {
+    height: 100vh;
+    flex-wrap: wrap;
+}

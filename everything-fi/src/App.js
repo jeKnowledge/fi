@@ -1,10 +1,17 @@
+import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+
+import { Home } from './containers'
+import { DEFAULT } from './urls';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Évariting dót fai</h1>  
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path={DEFAULT} element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
