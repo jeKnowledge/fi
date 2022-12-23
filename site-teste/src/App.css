@@ -1,0 +1,22 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+.app_bg {
+  
+  background: url('./assets/background.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+  
+}
+
+.nav_letter {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
