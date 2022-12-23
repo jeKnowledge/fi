@@ -1,4 +1,29 @@
 .Home {
     height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-middle {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
+}
+
+.home-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-sub-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 41px;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }

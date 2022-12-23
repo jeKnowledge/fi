@@ -1,12 +1,21 @@
 import React from 'react'
+import { Navbar } from '../../components'
+import images from '../../constants'
 import './Home.css'
 
-export default function Home() {
+function Home() {
     return (
-        <section id='Home'>
-            <div className="Home center">
-                <h1>EVERYTHING-FI</h1>
+        <div className="Home">
+            <div className="home-middle">
+                <div className="home-logo">
+                    <img src={images.logo} alt="" />
+                </div>
+                <div className="home-sub-heading">
+                    literacia financeira simplificada
+                </div>
             </div>
-        </section>
+        </div>
     )
 }
+
+export default Home

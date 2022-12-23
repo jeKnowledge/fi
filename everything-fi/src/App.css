@@ -1,5 +1,14 @@
+@import url('https://fonts.cdnfonts.com/css/clash-display');
+
+body {
+  font-family: 'Clash Display', sans-serif;
+  background-color: black;
+  color: white;
+}
+
 .center {
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 }
