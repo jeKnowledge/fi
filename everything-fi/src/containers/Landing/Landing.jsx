@@ -1,12 +1,14 @@
 import React from 'react'
 import { Navbar } from '../../components'
-import { Home } from '../'
+import { Home, About } from '../'
+import './Landing.css'
 
 function Landing() {
   return (
-    <div>
+    <div className="landing">
         <Navbar />
         <Home />
+        <About />
     </div>
   )
 }

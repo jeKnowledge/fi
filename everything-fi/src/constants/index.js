@@ -1,3 +1,3 @@
-import images from './images.js'
+import images from './images'
 
 export default images;

@@ -1,5 +1,9 @@
 import logo from '../assets/LOGOTIPO.svg'
+import icon from '../assets/ICON.svg'
 
-const all = {logo,};
+const imgs = {
+    logo,
+    icon,
+}
 
-export default all;
+export default imgs;

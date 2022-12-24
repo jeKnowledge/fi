@@ -1,26 +1,29 @@
 .Home {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.home-middle {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    height: 72vh;
+
+    padding-bottom: 8rem;
 }
 
-.home-logo{
+.home-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
+}
+
+.home-logo img {
+    width: 68rem;
 }
 
 .home-sub-heading {
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 35px;
     line-height: 41px;
 
     text-align: center;
