@@ -1,5 +1,4 @@
 import React from 'react'
-import { Navbar } from '../../components'
 import images from '../../constants'
 import './Home.css'
 

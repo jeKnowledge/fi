@@ -3,14 +3,17 @@
     justify-content: space-between;
     align-items: center;
 
+    position: fixed;
+
+    height: 3rem;
+    width: 100%;
     padding-top: 4rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
 }
 
-.navbar-logo img {
+.navbar img {
     width: 4rem;
     transition: 1s ease;
+    padding-left: 4rem;
 }
 
 .navbar-logo img:hover {
@@ -23,6 +26,7 @@
     align-items: center;
     font-size: 1.7rem;
     color: white;
+    padding-right: 4rem;
 }
 
 .navbar-pt-en a {
@@ -38,4 +42,19 @@
 .navbar-pt-en a:visited {
     color: white;
     border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-logo img {
+        display: none;
+    }
+
+    .navbar-pt-en {
+        padding-right: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        padding-top: 2rem;
+    }
 }

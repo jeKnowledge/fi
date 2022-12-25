@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
 
-    height: 72vh;
+    height: 100vh;
 
     padding-bottom: 8rem;
 }
@@ -29,4 +29,28 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+    .home-logo {
+        padding-bottom: .5rem;
+    }
+
+    .home-logo img {
+        width: 21rem;
+    }
+
+    .home-sub-heading {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .home-logo img {
+        width: 16rem;
+    }
+
+    .home-sub-heading {
+        font-size: .75rem;
+    }
 }
