@@ -1,0 +1,57 @@
+.app_podcast {
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.app_podcast h1{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    /* White */
+
+    color: "black";
+}
+
+
+.app_podcast h2 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    /* Green */
+
+    color: #9FF491;
+}
+
+.app_podcast p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 125% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    /* White */
+
+    color: #FFFFFF;
+}
