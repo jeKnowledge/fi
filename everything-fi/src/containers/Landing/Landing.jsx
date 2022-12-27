@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from '../../components'
+import { Navbar,Footer } from '../../components'
 import { Home, About } from '../'
 import './Landing.css'
 

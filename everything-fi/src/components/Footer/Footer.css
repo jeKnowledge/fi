@@ -1,0 +1,160 @@
+@import url('https://fonts.cdnfonts.com/css/Inter');
+
+.app_footer {
+    background: #111A26;
+    
+   
+    width:100%;
+    display:flex;
+    bottom: 0;
+  
+ 
+}
+
+
+
+.app_footer_contactos {
+    
+    width:50%;
+    display:inline-block;
+   
+    position:relative;
+    padding: 0rem 4rem;
+    text-align: left;
+    
+   
+    
+}
+
+.app_footer_contactos h1 {
+    
+    
+    text-align: left;
+    position:relative;
+}
+
+.app_footer_contactos h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    /* White */
+
+
+    color: #FFFFFF;
+    text-align: left;
+    position:relative;
+}
+.app_footer_contactos p {
+    margin-top:0px;
+    padding-top: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* White */
+
+    color: #FFFFFF;
+    position:relative;
+    text-align:left;
+}
+
+.text{
+    margin-top:6rem;
+}
+.text p{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* White */
+
+    color:white
+}
+
+.app_footer_organizacao  {
+    padding: 0rem;
+    display:block;
+    width:50%;
+    position:relative;  
+    text-align: right;
+    
+}
+.app_footer_organizacao h1 {
+    
+    text-align: center;
+    position:relative;
+}
+
+.logos{
+    text-align:center;
+}
+
+.logos img{
+    margin: 0.5rem;
+}
+
+
+
+
+
+.app_footer_logos {
+    
+    width:33.3%;
+    display:inline-block;
+    padding: 0rem 4rem;
+    position:relative;
+    
+}
+
+
+.app_footer_logos h1 {
+    
+    text-align: right;
+    position:relative;
+    
+}
+
+.app_footer_logos img {
+   margin: 0.4rem
+}
+
+.mobile_div {
+    width:66.6%;
+    display:flex;
+}
+
+
+
+
+@media (max-width:630px) {
+    .mobile_div {
+        display:block;
+        width: 80%;
+    }
+
+    .app_footer_organizacao{
+        padding: 0 2rem;
+        
+    }
+
+    .text p{
+        word-wrap: break-word;
+    }
+
+    .app_footer_contactos{
+        padding: 0 2rem;
+    }
+}
