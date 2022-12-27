@@ -11,6 +11,7 @@ function Landing() {
         <Navbar />
       </div>
       <About />
+      <Footer />
     </div>
   )
 }
