@@ -6,9 +6,11 @@ import './Landing.css'
 function Landing() {
   return (
     <div className="landing">
+      <Home />
+      <div className="sticky">
         <Navbar />
-        <Home />
-        <About />
+      </div>
+      <About />
     </div>
   )
 }
