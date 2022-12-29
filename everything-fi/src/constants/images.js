@@ -1,12 +1,12 @@
-import logo from '../assets/LOGOTIPO.svg'
-import icon from '../assets/ICON.svg'
-import jek_logo from '../assets/jek_logo.png'
-import nei_logo from '../assets/nei_logo.png'
-import insta from '../assets/insta.png'
-import linkedin from '../assets/linkedin.png'
-import tiktok from '../assets/tiktok.png'
-import youtube from '../assets/youtube.png'
-import spotify from '../assets/spotify.png'
+import logo from '../assets/logo.svg'
+import icon from '../assets/icon.svg'
+import jek_logo from '../assets/jek.svg'
+import nei_logo from '../assets/nei.svg'
+import insta from '../assets/insta.svg'
+import linkedin from '../assets/linkedin.svg'
+import tiktok from '../assets/tiktok.svg'
+import youtube from '../assets/yt.svg'
+import spotify from '../assets/spotify.svg'
 
 
 const imgs = {
