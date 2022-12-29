@@ -1,73 +1,103 @@
 .Home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    height: 100vh;
-
+/* como a width do ecrã as vezes pode ser maior do que 100vh temos q adicionar uma media query para evitar isto: https://prnt.sc/ZH5ooQmClTUc */
+/* check if the width is bigger than the height */
+@media screen and (
+    min-width: 1921px
+    ) {
+  .Home {
+    height: 100%;
+  }
 }
 
 #video {
-    z-index: -2;
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
+  z-index: -2;
+  align-self: center;
 }
 
-.home-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
+.wrapperGradient {
+    position: relative;
+  width: 100%;
+}
+
+.wrapperGradient::after {
     position: absolute;
-    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: linear-gradient(180deg, rgba(17, 26, 38, 0) 0%, #111a26 100%);
+    backdrop-filter: blur(10px);
+  }
+
+.home-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  position: absolute;
+  z-index: 2;
 }
 
 .home-logo img {
-    width: 68rem;
-    z-index: 2;
-
+  width: 68rem;
+  z-index: 2;
 }
 
 .home-sub-heading {
-    position: absolute;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 41px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 41px;
 
-    margin-top: 15rem;
+  margin-top: 15rem;
 
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    z-index: 2;
-
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  z-index: 2;
 }
 
 @media screen and (max-width: 480px) {
-    .home-logo {
-        padding-bottom: .5rem;
-    }
+  /* for small screens make sure it fills the height */
+  #video {
+    height: 100%;
+  }
 
-    .home-logo img {
-        width: 21rem;
-    }
+  .home-logo {
+    padding-bottom: 0.5rem;
+  }
 
-    .home-sub-heading {
-        font-size: 1rem;
-    }
+  .home-logo img {
+    width: 21rem;
+  }
+
+  .home-sub-heading {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 300px) {
-    .home-logo img {
-        width: 16rem;
-    }
+  .home-logo img {
+    width: 16rem;
+  }
 
-    .home-sub-heading {
-        font-size: .75rem;
-    }
+  .home-sub-heading {
+    font-size: 0.75rem;
+  }
+}
+
+/* for large screens make sure it filled the widths*/
+@media screen and (min-width: 1920px) {
+  #video {
+    width: 100%;
+  }
 }

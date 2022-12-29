@@ -1,6 +1,7 @@
 .landing {
     display: flex;
     flex-direction: column;
+    background-color: #111A26;
 }
 
 .sticky {
