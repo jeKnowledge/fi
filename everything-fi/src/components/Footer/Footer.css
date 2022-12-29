@@ -66,6 +66,11 @@
     text-align:left;
 }
 
+.app_footer_contactos a {
+    text-decoration: none;
+    color: white;
+}
+
 .text{
     margin-top:6rem;
 }
