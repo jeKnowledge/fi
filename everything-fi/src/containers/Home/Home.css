@@ -7,12 +7,6 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
-/* como a width do ecrã as vezes pode ser maior do que 100vh temos q adicionar uma media query para evitar isto: https://prnt.sc/ZH5ooQmClTUc */
-@media screen and (min-width: 1920px) {
-  .Home {
-    height: 100%;
-  }
-}
 
 #video {
   z-index: -2;
