@@ -4,13 +4,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-
 /* como a width do ecrã as vezes pode ser maior do que 100vh temos q adicionar uma media query para evitar isto: https://prnt.sc/ZH5ooQmClTUc */
-/* check if the width is bigger than the height */
-@media screen and (
-    min-width: 1921px
-    ) {
+@media screen and (min-width: 1920px) {
   .Home {
     height: 100%;
   }
@@ -24,6 +22,7 @@
 .wrapperGradient {
     position: relative;
   width: 100%;
+  height: 100%;
 }
 
 .wrapperGradient::after {
