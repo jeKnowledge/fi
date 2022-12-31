@@ -7,6 +7,7 @@ import linkedin from '../assets/linkedin.svg'
 import tiktok from '../assets/tiktok.svg'
 import youtube from '../assets/yt.svg'
 import spotify from '../assets/spotify.svg'
+import bg_video from '../assets/bg_video.mp4'
 
 
 const imgs = {
@@ -19,6 +20,7 @@ const imgs = {
     tiktok,
     youtube,
     spotify,
+    bg_video,
 }
 
 export default imgs;
