@@ -70,3 +70,9 @@
 }
 
 
+@media (max-width: 630px) {
+    .app_podcast p{
+        padding: 1rem 2rem
+    }
+}
+
