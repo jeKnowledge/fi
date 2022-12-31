@@ -5,10 +5,14 @@
     
    
     width:100%;
-    display:flex;
+    display:block;
     bottom: 0;
   
  
+}
+
+.app_footer_informacao {
+    display:flex;
 }
 
 
@@ -19,7 +23,7 @@
     display:inline-block;
    
     position:relative;
-    padding: 0rem 4rem;
+    padding: 1rem 4rem;
     text-align: left;
     
    
@@ -71,9 +75,7 @@
     color: white;
 }
 
-.text{
-    margin-top:6rem;
-}
+
 .text p{
     
     font-family: 'Inter';
@@ -90,7 +92,7 @@
 }
 
 .app_footer_organizacao  {
-    padding: 0rem;
+    padding: 1rem;
     display:block;
     width:50%;
     position:relative;  
@@ -104,6 +106,7 @@
 }
 
 .logos{
+    
     text-align:center;
 }
 
@@ -122,13 +125,18 @@
     padding: 0rem 4rem;
     position:relative;
     
+    
 }
 
 
 .app_footer_logos h1 {
     
-    text-align: right;
+ 
     position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
     
 }
 
@@ -141,25 +149,48 @@
     display:flex;
 }
 
+.text {
+    padding: 1rem 4rem
+}
 
+@media (max-width:1024px) {
+    .app_footer_logos h1{
+        display:block
+        
 
+    }
+   
+    .text {
+        padding: 0 2rem;
+    }
+    .app_footer_contactos{
+        padding: 1rem 2rem;
+    }
+}
 
 @media (max-width:630px) {
     .mobile_div {
         display:block;
-        width: 80%;
-    }
-
-    .app_footer_organizacao{
-        padding: 0 2rem;
         
     }
 
+    .app_footer_organizacao{
+        padding: 1rem 2rem;
+    
+    }
+    .text {
+        padding: 0rem 2rem;
+    }
     .text p{
         word-wrap: break-word;
     }
 
     .app_footer_contactos{
-        padding: 0 2rem;
+        padding: 1rem 2rem;
+    }
+    .app_footer_logos h1{
+        display:block;
+        padding: 1rem 2rem
+
     }
 }

@@ -6,6 +6,7 @@ const Footer = () => {
 
     return (
         <footer className="app_footer">
+            <div className="app_footer_informacao">
             <div className="mobile_div">
                 <div className='app_footer_contactos'>
 
@@ -13,9 +14,6 @@ const Footer = () => {
                     <h2>E-mail</h2>
                     <a href="mailto:geral@everything-fi.com">geral@everything-fi.com</a>
 
-                    <div className="text">
-                        <p >This website is © everything.fi 2022.</p>
-                    </div>
                 </div>
                 <div className="app_footer_organizacao">
                     <h1 className="text_footer_header">Organização</h1>
@@ -28,13 +26,18 @@ const Footer = () => {
             </div>
             <div className="app_footer_logos">
                 <h1>
-                    <img src={images.insta} alt="insta logo"></img>
-                    <img src={images.linkedin} alt="linkedin logo"></img>
-                    <img src={images.spotify} alt="spotify logo"></img>
-                    <img src={images.tiktok} alt="tiktok logo"></img>
-                    <img src={images.youtube} alt="youtube logo"></img>
+                    <a href="https://www.instagram.com/_everything.fi_/"><img src={images.insta} alt="insta logo"></img></a>
+                    <a><img src={images.linkedin} alt="linkedin logo"></img></a>
+                    <a><img src={images.spotify} alt="spotify logo"></img></a>
+                    <a><img src={images.tiktok} alt="tiktok logo"/></a>
+                   
+                    <a href="" ><img src={images.youtube} alt="Tutorialspoint"/></a>
                 </h1>
             </div>
+            </div>
+            <div className="text">
+                    <p >This website is © everything.fi 2022.</p>
+                </div>
         </footer>
 
 

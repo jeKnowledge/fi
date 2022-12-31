@@ -1,5 +1,5 @@
 import logo from '../assets/logo.svg'
-import icon from '../assets/icon.svg'
+import icon from '../assets/ICON.svg'
 import jek_logo from '../assets/jek.svg'
 import nei_logo from '../assets/nei.svg'
 import insta from '../assets/insta.svg'
