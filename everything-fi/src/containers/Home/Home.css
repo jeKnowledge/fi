@@ -40,8 +40,8 @@
 }
 
 .home-logo img {
-  width: 68rem;
-  z-index: 2;
+  width: 90%;
+  max-width: 1800px;
 }
 
 .home-sub-heading {
