@@ -6,7 +6,7 @@
 }
 
 .about-text {
-    width: 85rem;
+    width: 80%;
 
     font-weight: 600;
     font-size: 200%;
@@ -17,11 +17,9 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 670px) {
     .about-text {
-        width: 21rem;
-
-        
-        font-size: 1rem;
+        width: 85%;
+        font-size: 1.2rem;
     }
 }
