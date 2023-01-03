@@ -9,8 +9,8 @@ const Navbar = () => {
         <img src={images.icon} alt="navbar_icon" />
       </div>
       <div className="navbar-pt-en">
-        <a href="#PT">PT</a>
-        <a href="#EN">EN</a>
+        <a style={{fontWeight: 500, borderBottom: "1px solid white"}}>PT</a>
+        <a>EN</a>
       </div>
     </nav>
   );

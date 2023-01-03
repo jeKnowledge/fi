@@ -1,213 +1,200 @@
-@import url('https://fonts.cdnfonts.com/css/Inter');
+@import url("https://fonts.cdnfonts.com/css/Inter");
 
 .app_footer {
-    background: #111A26;
-    
-   
-    width:100%;
-    display:block;
-    bottom: 0;
-    position:relative
-  
- 
+  background: #111a26;
+
+  width: 100%;
 }
 
 .app_footer_informacao {
-    display:flex;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap; /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+  margin-bottom: 4rem;
 }
 
-
-
-.app_footer_contactos {
-    
-    width:50%;
-    display:inline-block;
-   
-    position:relative;
-    padding: 2rem 4rem;
-    text-align: left;
-    
-   
-    
+/* first element of app_footer_informacao */
+.app_footer_informacao > div:first-child {
+  margin-left: 6rem;
 }
 
-.app_footer_contactos h1 {
-    
-    
-    text-align: left;
-    position:relative;
+/* last element of app_footer_informacao */
+.app_footer_informacao > div:last-child {
+  margin-right: 5.9rem;
 }
 
-.app_footer_contactos h2{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    padding-bottom:0px;
-    margin-bottom:0px;
-    /* White */
+.app_footer_contactos span {
+  text-align: left;
+  position: relative;
+}
 
+.app_footer_contactos h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 24px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  /* White */
 
-    color: #FFFFFF;
-    text-align: left;
-    position:relative;
+  color: #ffffff;
+  text-align: left;
+  position: relative;
 }
 .app_footer_contactos p {
-    margin-top:0px;
-    padding-top: 0px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
+  /* White */
 
-    /* White */
-
-    color: #FFFFFF;
-    position:relative;
-    text-align:left;
+  color: #ffffff;
+  position: relative;
+  text-align: left;
 }
 
 .app_footer_contactos a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
+.text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
-.text p{
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
+  /* White */
 
-
-    /* White */
-
-    color:white
+  color: white;
 }
 
-.app_footer_organizacao  {
-    padding: 2rem 1rem;
-    display:block;
-    
-    position:relative;  
-    text-align: right;
-    
-}
-.app_footer_organizacao h1 {
-    
-    text-align: center;
-    position:relative;
+.logos {
+  text-align: center;
 }
 
-.logos{
-    
-    text-align:center;
+.logos img {
+  margin: 0.5rem;
 }
-
-.logos img{
-    margin: 0.5rem;
-}
-
-
-
-
 
 .app_footer_logos {
-    
-    width:33.3%;
-    display:inline-block;
-    padding: 1rem 4rem;
-    position:relative;
-    
-    
-}
-
-
-.app_footer_logos h1 {
-    
- 
-    position:relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
 }
 
 .app_footer_logos img {
-   margin: 0.4rem
+  margin: 0 0.4rem;
+}
+.app_footer_logos a:last-child img {
+  margin-right: 0;
 }
 
-.mobile_div {
-    width:66.6%;
-    display:flex;
+.app_footer_logos a:first-child img {
+  margin-left: 0;
 }
 
 .text {
-    padding: 1rem 4rem
+  padding: 1rem 7rem;
 }
 
-@media (max-width:1024px) {
-    .app_footer_organizacao{
-        padding: 1rem 1rem;
-        
-    }
-    .app_footer_logos {
-    
-     
-        padding: 0rem 1rem;
-        
-        
-    }
-    
-    .text {
-        padding: 1rem 1rem;
-    }
-    .app_footer_contactos{
-        padding: 1rem 1rem;
-    }
+@media (max-width: 1024px) {
+  /* first element of app_footer_informacao */
+  .app_footer_informacao > div:first-child {
+    margin-left: 2rem;
+  }
+
+  /* last element of app_footer_informacao */
+  .app_footer_informacao > div:last-child {
+    margin-right: 1.9rem;
+  }
+
+  /* decrase app_footer_logos size */
+  .app_footer_logos img {
+    width: 25px;
+  }
+
+  .text {
+    padding: 1rem 2rem;
+  }
+  .text_footer_header {
+    font-size: 1.3rem;
+  }
 }
 
-@media (max-width:630px) {
-    .mobile_div {
-        display:block;
-        
-        
-    }
+@media (max-width: 670px) {
+  .app_footer_informacao {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-areas:
+      "app_footer_contactos app_footer_contactos app_footer_logos"
+      "app_footer_organizacao app_footer_organizacao app_footer_logos"
+      "app_footer_organizacao app_footer_organizacao app_footer_logos";
 
-    .app_footer_organizacao{
-        padding: 0rem 1rem;
-       
-    }
-    .logos {
-        text-align: left;
-    }
-    .text {
-        padding: 0rem 1rem;
-    }
-    .text p{
-        word-wrap: break-word;
-    }
+    position: relative;
+    text-align: right;
+  }
 
-    .app_footer_contactos{
-        padding: 1rem 1rem;
-    }
-    .app_footer_logos{
-        text-align: right;
-    }
-    .app_footer_logos h1{
-        display:block;
-        padding-top:  1rem;
-        padding-left: 0.5rem;
-        padding-right: 1rem
-        
+  .app_footer_organizacao {
+    padding: 2rem 1rem;
+    grid-area: app_footer_organizacao;
+    text-align: left;
+    margin-left: 2rem;
+  }
 
-    }
+  .app_footer_contactos {
+    padding: 0rem 1rem;
+    grid-area: app_footer_contactos;
+
+    text-align: left;
+  }
+
+  .logos {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .logos img {
+    margin: 0rem 1rem 0rem 0rem;
+  }
+
+  .text {
+    padding: 0rem 2rem 3rem;
+  }
+  .text p {
+    word-wrap: break-word;
+  }
+
+  .app_footer_logos {
+    grid-area: app_footer_logos;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-top: 0rem;
+  }
+
+  .app_footer_logos img {
+    margin: 0.4rem 0;
+    width: 30px;
+  }
+
+  .text_footer_header {
+    font-size: 1.5rem;
+  }
 }
