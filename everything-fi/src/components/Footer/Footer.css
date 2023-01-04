@@ -1,0 +1,200 @@
+@import url("https://fonts.cdnfonts.com/css/Inter");
+
+.app_footer {
+  background: #111a26;
+
+  width: 100%;
+}
+
+.app_footer_informacao {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap; /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+  margin-bottom: 4rem;
+}
+
+/* first element of app_footer_informacao */
+.app_footer_informacao > div:first-child {
+  margin-left: 6rem;
+}
+
+/* last element of app_footer_informacao */
+.app_footer_informacao > div:last-child {
+  margin-right: 5.9rem;
+}
+
+.app_footer_contactos span {
+  text-align: left;
+  position: relative;
+}
+
+.app_footer_contactos h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 24px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  /* White */
+
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+}
+.app_footer_contactos p {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* White */
+
+  color: #ffffff;
+  position: relative;
+  text-align: left;
+}
+
+.app_footer_contactos a {
+  text-decoration: none;
+  color: white;
+}
+
+.text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* White */
+
+  color: white;
+}
+
+.logos {
+  text-align: center;
+}
+
+.logos img {
+  margin: 0.5rem;
+}
+
+.app_footer_logos {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+}
+
+.app_footer_logos img {
+  margin: 0 0.4rem;
+}
+.app_footer_logos a:last-child img {
+  margin-right: 0;
+}
+
+.app_footer_logos a:first-child img {
+  margin-left: 0;
+}
+
+.text {
+  padding: 1rem 7rem;
+}
+
+@media (max-width: 1024px) {
+  /* first element of app_footer_informacao */
+  .app_footer_informacao > div:first-child {
+    margin-left: 2rem;
+  }
+
+  /* last element of app_footer_informacao */
+  .app_footer_informacao > div:last-child {
+    margin-right: 1.9rem;
+  }
+
+  /* decrase app_footer_logos size */
+  .app_footer_logos img {
+    width: 25px;
+  }
+
+  .text {
+    padding: 1rem 2rem;
+  }
+  .text_footer_header {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .app_footer_informacao {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-areas:
+      "app_footer_contactos app_footer_contactos app_footer_logos"
+      "app_footer_organizacao app_footer_organizacao app_footer_logos"
+      "app_footer_organizacao app_footer_organizacao app_footer_logos";
+
+    position: relative;
+    text-align: right;
+  }
+
+  .app_footer_organizacao {
+    padding: 2rem 1rem;
+    grid-area: app_footer_organizacao;
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .app_footer_contactos {
+    padding: 0rem 1rem;
+    grid-area: app_footer_contactos;
+
+    text-align: left;
+  }
+
+  .logos {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .logos img {
+    margin: 0rem 1rem 0rem 0rem;
+  }
+
+  .text {
+    padding: 0rem 2rem 3rem;
+  }
+  .text p {
+    word-wrap: break-word;
+  }
+
+  .app_footer_logos {
+    grid-area: app_footer_logos;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-top: 0rem;
+  }
+
+  .app_footer_logos img {
+    margin: 0.4rem 0;
+    width: 30px;
+  }
+
+  .text_footer_header {
+    font-size: 1.5rem;
+  }
+}
