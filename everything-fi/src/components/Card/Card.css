@@ -58,7 +58,11 @@ html{
 }
 
 .grid {
-    padding-top: 228px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
 }
 
 .top-row {

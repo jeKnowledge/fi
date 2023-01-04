@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "../Card/Card";
+import Card from "../../components/Card/Card";
 import "./Temas.css"
 
 export default function Temas(){
     return(
-            <section id="Temas">
+            <div className="Temas">
                 <div className="grid">
                     <div className="theme">
                         <h1>TEMAS</h1>
@@ -34,6 +34,6 @@ export default function Temas(){
                         />
                     </div>
                 </div>
-            </section>
+            </div>
     )
 }

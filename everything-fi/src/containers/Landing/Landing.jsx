@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar,Footer } from '../../components'
-import { Home, About, Podcast } from '../'
+import { Navbar, Footer } from '../../components'
+import { Home, About, Podcast, Temas } from '../'
 import './Landing.css'
 
 function Landing() {
@@ -11,6 +11,7 @@ function Landing() {
         <Navbar />
       </div>
       <About />
+      <Temas />
       <Podcast />
       <Footer />
     </div>

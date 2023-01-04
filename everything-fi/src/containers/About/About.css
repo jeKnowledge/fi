@@ -1,8 +1,9 @@
 .About {
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 }
 
 .about-text {

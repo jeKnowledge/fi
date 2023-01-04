@@ -1,7 +1,6 @@
 import React from 'react'
 import images from '../../constants'
 import './Home.css'
-import Temas from "../../components/Temas/Temas";
 
 function Home() {
     return (
