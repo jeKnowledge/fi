@@ -1,18 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/clash-display');
 
-body {
-  font-family: 'Clash Display', sans-serif;
-  background-color: black;
-  color: white;
-}
-
 .center {
   display: flex;
-  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 }
 
+body {
+    font-family: 'Clash Display', sans-serif;
+    background-color: black;
+    color: white;
+}
 
 .text_footer_header {
   font-family: 'Clash Display';
@@ -25,5 +23,4 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: white;
-
 }
