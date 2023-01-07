@@ -43,17 +43,7 @@ html{
     transition: 0.5s;
 }
 
-.card-container:hover h3{
-    color: #1373E4;
-}
-
-.card-container:hover p{
-    color: #1373E4;
-}
-
 .card-container:hover{
-    border-color: #1373E4;
-
     transform: scale(1.05);
 }
 
