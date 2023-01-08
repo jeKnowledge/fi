@@ -1,5 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/clash-display');
 
+*::selection {
+  color: #552ACF;
+  background: #9FF491;
+}
+
 .center {
   display: flex;
   align-content: center;
