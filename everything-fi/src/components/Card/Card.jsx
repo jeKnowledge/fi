@@ -1,9 +1,9 @@
 import React from "react";
 import "./Card.css"
 
-function Card({title, text}){
+function Card({title, text, id}){
     return (
-            <div className="card-container" >
+            <div className={"card-container "+"card-"+id} >
                 <div className="card-content">
                     <div className="card-title">
                         <h3>{title}</h3>

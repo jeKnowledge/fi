@@ -3,6 +3,9 @@
     flex-direction: column;
     background-color: #111A26;
     z-index: 0;
+    background-image: url("../../assets/gradiente_soft.png");
+    background-repeat: no-repeat;
+    background-position: 0% 160vh;
 }
 
 .sticky {
