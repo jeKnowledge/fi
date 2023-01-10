@@ -14,21 +14,22 @@
 }
 
 .wrapperGradient {
-    position: relative;
+  position: relative;
   width: 100%;
   height: 100%;
+
 }
 
 .wrapperGradient::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background-image: linear-gradient(180deg, rgba(17, 26, 38, 0) 0%, #111a26 100%);
-    backdrop-filter: blur(10px);
-  }
+  position: absolute;
+  bottom: -1px; /* Leave this here, line bug */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-image: linear-gradient(180deg, rgba(17, 26, 38, 0) 0%, #111a26 100%);
+  backdrop-filter: blur(10px);
+}
 
 .home-logo {
   display: flex;
@@ -60,6 +61,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
   /* for small screens make sure it fills the height */
   #video {
     height: 100%;

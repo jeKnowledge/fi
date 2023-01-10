@@ -2,9 +2,10 @@
 @import url("https://fonts.cdnfonts.com/css/Inter");
 
 .app_podcast {
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .app_podcast h1 {
@@ -62,6 +63,22 @@
 .app_podcast span {
   padding: 0rem 10rem;
 }
+
+.bg-gradientfooter {
+  overflow: hidden;
+  position: relative;
+  right: 0px;
+  margin-top: -90vh;
+  bottom: 0px;
+  height: 90vh;
+  z-index: 1;
+  background-image: url("../../assets/gradiente_bottomright.png");
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}   
+
 
 @media (max-width: 630px) {
   .app_podcast span {
