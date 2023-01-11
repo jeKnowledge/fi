@@ -59,7 +59,7 @@
 
 .button-container p {
     
-    font-family: 'Inter';
+    font-family: 'Inter', "sans-serif";
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -74,7 +74,9 @@
 
 
 
-  
+ .question-container p{
+    font-family: "Inter", "sans-serif";
+}
 
 .question-container p.show {
     display: block

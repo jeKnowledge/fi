@@ -24,6 +24,7 @@ html {
 }
 
 .card-content p {
+    font-family: "Inter", "sans-serif";
     font-size: 22px;
     margin-top: 16px;
 }
