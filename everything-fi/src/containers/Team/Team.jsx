@@ -21,13 +21,21 @@ function Team() {
 
             <section className="team-cards">
                 <h1>Direção</h1>
+                {/* Insert Team Cards here */}
                 <h1>Imagem</h1>
+                {/* Insert Team Cards here */}
                 <h1>Informática</h1>
+                {/* Insert Team Cards here */}
                 <h1>Logística</h1>
+                {/* Insert Team Cards here */}
                 <h1>Marketing e Comunicação</h1>
+                {/* Insert Team Cards here */}
                 <h1>Parcerias</h1>
+                {/* Insert Team Cards here */}
                 <h1>Podcast</h1>
+                {/* Insert Team Cards here */}
                 <h1>Tesouraria</h1>
+                {/* Insert Team Cards here */}
             </section>
         </div>
     )
