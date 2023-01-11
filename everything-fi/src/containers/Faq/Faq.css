@@ -1,0 +1,86 @@
+@import url("https://fonts.cdnfonts.com/css/clash-display");
+@import url("https://fonts.cdnfonts.com/css/Inter");
+
+.app_faq {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    
+}
+
+.app_faq h1 {
+    text-align: center;
+    font-family: 'Clash Display';
+    /* LETTER */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    /* White */
+
+    color: #FFFFFF;
+}
+.question-container {
+    
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    margin: 2rem 10rem;
+  }
+
+
+.question_div h2 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+
+.question_div  {
+    
+    display:flex;
+    
+}
+
+.question_head{
+    width:100%
+}
+
+.button-container p {
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    
+}
+
+
+
+  
+
+.question-container p.show {
+    display: block
+}
+
+.question-container p.hide {
+display: none;
+}
+
