@@ -2,10 +2,6 @@ html {
     background-color: black;
 }
 
-.theme {
-    padding-bottom: 20px;
-}
-
 .card-container {
     border: 1px solid #FFFFFF;
 
@@ -14,6 +10,7 @@ html {
     animation: ease-in-out;
     align-content: center;
 
+    height: 100%;
 }
 
 .card-content {
@@ -41,6 +38,7 @@ p {
     text-align: left;
 
     transition: 0.5s;
+    height: 100%;
 }
 
 .card-container:hover {
@@ -87,4 +85,11 @@ p {
     row-gap: 1.8rem;
     column-gap: 1.5rem;
     grid-auto-flow: dense;
+}
+
+@media screen and (max-width: 1024px) {
+    .card-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
