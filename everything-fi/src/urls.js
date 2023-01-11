@@ -1,5 +1,6 @@
 const DEFAULT = ''
+const TEAM = '/team'
 
 export {
-    DEFAULT,
+    DEFAULT, TEAM,
 }
