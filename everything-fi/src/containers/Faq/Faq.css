@@ -4,7 +4,8 @@
 .app_faq {
     display:flex;
     flex-direction: column;
-    margin-bottom: 10rem;
+    
+
     
 }
 
@@ -25,10 +26,15 @@
     color: #FFFFFF;
 }
 .question-container {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 3.8rem;
     border: 1px solid #FFFFFF;
-    padding: 10px;
-    margin: 2rem 10rem;
+    padding: 0.4rem;
+    margin: 0.6rem 10rem;
+    transition: height 0.5s;
+    overflow: hidden;
   }
 
 
@@ -78,11 +84,25 @@
     font-family: "Inter", "sans-serif";
 }
 
-.question-container p.show {
-    display: block
+.question-container.open {
+    height: 6rem;
+    
+   
 }
 
 .question-container p.hide {
-display: none;
+    display: none;
 }
 
+
+@media (max-width: 1024px) {
+    .question-container {
+        margin: 0.6rem 6rem;
+      }
+}
+    
+@media (max-width: 670px) {
+    .question-container {
+        margin: 0.6rem 2rem;
+    }
+}

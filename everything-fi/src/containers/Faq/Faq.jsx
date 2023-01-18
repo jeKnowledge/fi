@@ -5,9 +5,9 @@ import './Faq.css'
 
 function Faq() {
   const [questions] = useState([
-    { question: 'Quem é o edu?', answer: 'Fã da Taylor Swift.' },
-    { question: 'Quem é o Miguel?', answer: 'Fã do Chentric' },
-    { question: 'O que é o .Fi?', answer: ' Reunião anual do clube de fãs do claudio Andre' },
+    { question: 'bla bla?', answer: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbla' },
+    { question: 'bla bla?', answer: 'bla bla bla' },
+    { question: 'bla bla?', answer: 'bla bla bla' },
   ]);
 
   // ARRAY DAS RESPOSTAS VAZIO
