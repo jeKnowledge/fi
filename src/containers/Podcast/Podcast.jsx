@@ -12,7 +12,6 @@ const Podcast = () => {
                 <span>Mantenha-se atualizado! Visite as nossas redes sociais e fique a par de tudo o que estamos a planear para si. Siga-nos e aprenda connosco a atingir a estabilidade financeira que tanto procura!</span>
                 <Faq />
             </div>
-            <div className='bg-gradientfooter'></div>
         </>
     )
 }

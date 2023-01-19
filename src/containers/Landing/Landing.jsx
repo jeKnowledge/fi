@@ -13,6 +13,7 @@ function Landing() {
       <About />
       <Temas />
       <Podcast />
+      <div className='bg-gradientfooter'></div>
       <Footer />
     </div>
   )

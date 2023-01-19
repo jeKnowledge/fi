@@ -50,15 +50,18 @@
 .bg-gradientfooter {
   overflow: hidden;
   position: relative;
-  right: 0px;
-  margin-top: -110vh;
+  margin-right: -20px;
+  margin-top: -90vh;
   bottom: 0px;
-  height: 110vh;
+  height: 90vh;
   z-index: 1;
   background-image: url("../../assets/gradiente_softmiddle.png");
   background-position: center right;
   background-repeat: no-repeat;
-
+  /* contain*/
+  background-size: contain;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .color_g {
