@@ -31,8 +31,6 @@ const cards = [
     }
 ]
 
-
-
 export default function Temas() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const isMobile = useMediaQuery({ query: '(max-width: 1024px)' })
@@ -41,7 +39,7 @@ export default function Temas() {
         setCurrentIndex(index);
     }
     return (
-        <div className="Temas">
+        <section className="Temas">
             <div className="grid">
                 <div className="theme">
                     <h1>TEMAS</h1>
@@ -91,9 +89,8 @@ export default function Temas() {
                             />
                         ))}
                     </div>
-
                 }
             </div>
-        </div>
+        </section>
     )
 }

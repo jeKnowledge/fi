@@ -4,7 +4,7 @@ import './Home.css'
 
 function Home() {
     return (
-        <div className="Home">
+        <section className="Home">
             <div className="home-logo">
                 <img src={images.logo} alt="everything-fi logo" />
             </div>
@@ -14,7 +14,7 @@ function Home() {
             <div className='wrapperGradient'>
                 <video src={images.bg_video} id='video' loop autoPlay muted alt="background video"/>
             </div>
-        </div>
+        </section>
     )
 }
 

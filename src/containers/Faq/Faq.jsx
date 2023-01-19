@@ -14,38 +14,42 @@ function Faq() {
   const [visibleAnswers, setVisibleAnswers] = useState(new Array(questions.length).fill(false));
 
   return (
-    <div className='app_faq'>
+    <section className='app_faq'>
       <h1>FAQS</h1>
       {questions.map((question, i) => (
-      <div 
-        className={`question-container ${visibleAnswers[i] ? 'open' : ''}`} 
-        key={i} 
-        onClick={() => setVisibleAnswers(prevVisibleAnswers => {
-          const newVisibleAnswers = [...prevVisibleAnswers];
-          newVisibleAnswers[i] = !newVisibleAnswers[i];
-          return newVisibleAnswers;
-        })}
-      >
-      <div className='question_div'>
-        <div className='question_head'>
-        <h2>{question.question}</h2>
+        <div
+          className={`question-container ${visibleAnswers[i] ? 'open' : ''}`}
+          key={i}
+          onClick={() => setVisibleAnswers(prevVisibleAnswers => {
+            const newVisibleAnswers = [...prevVisibleAnswers];
+            newVisibleAnswers[i] = !newVisibleAnswers[i];
+            return newVisibleAnswers;
+          })}
+        >
+          <div className='question_div'>
+            <div className='question_head'>
+              <h2>{question.question}</h2>
+            </div>
+            <div className="button-container">
+              {visibleAnswers[i]
+                ? <span
+                  style={{ cursor: 'pointer', fontWeight: '400' }}
+                  onClick={() => setVisibleAnswers(prevVisibleAnswers => {
+                    prevVisibleAnswers[i] = !prevVisibleAnswers[i];
+                    return [...prevVisibleAnswers];
+                  })}>-</span>
+                : <span
+                  style={{ cursor: 'pointer', fontWeight: '400' }}
+                  onClick={() => setVisibleAnswers(prevVisibleAnswers => {
+                    prevVisibleAnswers[i] = !prevVisibleAnswers[i];
+                    return [...prevVisibleAnswers];
+                  })}>+</span>}
+            </div>
+          </div>
+          <span className={visibleAnswers[i] ? 'show' : 'hide'}>{question.answer}</span>
         </div>
-        <div className="button-container">
-      {visibleAnswers[i] 
-        ? <p onClick={() => setVisibleAnswers(prevVisibleAnswers => {
-              prevVisibleAnswers[i] = !prevVisibleAnswers[i];
-              return [...prevVisibleAnswers];
-            })}>-</p> 
-        : <p onClick={() => setVisibleAnswers(prevVisibleAnswers => {
-              prevVisibleAnswers[i] = !prevVisibleAnswers[i];
-              return [...prevVisibleAnswers];
-            })}>+</p>}
-    </div>
-    </div>
-    <p className={visibleAnswers[i] ? 'show' : 'hide'}>{question.answer}</p>
-  </div>
-))}
-    </div>
+      ))}
+    </section>
   );
 }
 
