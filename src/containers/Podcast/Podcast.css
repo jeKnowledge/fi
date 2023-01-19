@@ -85,10 +85,10 @@
 }
 
 
-@media (max-width: 630px) {
+@media (max-width: 670px) {
   .app_podcast span {
-    padding: 1rem 1rem;
-    font-size: 16px;
     line-height: 19px;
+    font-size: 18px;
+
   }
 }

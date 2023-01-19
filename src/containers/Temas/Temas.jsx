@@ -35,7 +35,7 @@ export default function Temas() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const isMobile = useMediaQuery({ query: '(max-width: 1024px)' })
 
-    const onChange = (index, item) => {
+    const onChange = (index) => {
         setCurrentIndex(index);
     }
     return (
@@ -60,7 +60,7 @@ export default function Temas() {
                                 thumbWidth={90}
                                 showArrows={isMobile ? false : true}
                                 style={{ width: "margin-top: 30px" }}
-                                onChange={(index, item) => onChange(index, item)}
+                                onChange={(index) => onChange(index)}
                             >
                                 {cards.map((card, i) => (
                                     <Card
@@ -73,7 +73,7 @@ export default function Temas() {
                         </div>
                         <div className="flex-dots">
                             {cards.map((card, i) => (
-                                <img className="dots" src={currentIndex === i ? selected : unselected} alt={i} />
+                                <img className="dots" src={currentIndex === i ? selected : unselected} alt={i} onClick={() => onChange(i)} />
                             ))}
                         </div>
                     </>

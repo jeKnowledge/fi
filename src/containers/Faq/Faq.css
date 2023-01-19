@@ -2,119 +2,168 @@
 @import url("https://fonts.cdnfonts.com/css/Inter");
 
 .app_faq {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    margin-top: 5vh;
-    overflow-wrap: break-word;
-    text-align: left ;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  margin-top: 5vh;
+  overflow-wrap: break-word;
+  text-align: left;
 }
 
 .app_faq h1 {
-    text-align: center;
-    font-family: 'Inter', "sans-serif";
-    /* LETTER */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 49px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  text-align: center;
+  font-family: "Inter", "sans-serif";
+  /* LETTER */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-    /* White */
-    color: #FFFFFF;
+  /* White */
+  color: #ffffff;
 
-    margin-top: 40vh;
+  margin-top: 40vh;
 }
 
 .question-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-height: 4rem;
-    border: 1px solid #FFFFFF;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin: 0.6rem 5rem;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-    font-family: 'Inter', "sans-serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 4rem;
+  border: 1px solid #ffffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0.6rem 5rem;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  font-family: "Inter", "sans-serif";
 
+  /* apply fadein animation to the question-container */
+  animation: fadein 0.5s;
+  -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+  -moz-animation: fadein 0.5s; /* Firefox */
+  -o-animation: fadein 0.5s; /* Opera */
+  -ms-animation: fadein 0.5s; /* Internet Explorer */
 }
-
 
 .question_div h2 {
-    font-family: 'Inter', "sans-serif";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    /* identical to box height */
+  font-family: "Inter", "sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height */
 
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-
 .question_div {
-    display: flex;
+  display: flex;
 }
 
 .question_head {
-    width: 100%;
+  width: 100%;
 }
 
 .button-container p {
-    font-family: 'Inter', "sans-serif";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    /* identical to box height */
-    padding-right: 1rem;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.02em;
+  font-family: "Inter", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
 }
 
 .button-container {
-    margin-top: -0.3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  margin-top: -0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .question-container span {
-    font-family: "Inter", "sans-serif";
-    font-weight: 200;
-
+  font-family: "Inter", "sans-serif";
+  font-weight: 200;
+  padding-bottom: 0.5rem;
 }
 
 .question-container.open {
-    height: auto;
-    max-height: 20rem;
+  height: auto;
+  max-height: 20rem;
 }
 
-.question-container p.hide {
-    display: none;
-    
+.question-container span.open {
+  opacity: 1;
+}
+
+.question-container span.hide {
+  opacity: 0;
+  animation: fadeout 0.5s;
+  -webkit-animation: fadeout 0.5s; /* Safari and Chrome */
+  -moz-animation: fadeout 0.5s; /* Firefox */
+  -o-animation: fadeout 0.5s; /* Opera */
+  -ms-animation: fadeout 0.5s; /* Internet Explorer */
 }
 
 @media (max-width: 1024px) {
-    .question-container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin: 0.6rem 0rem;
-    }
+  .question-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.6rem 0rem;
+  }
 }
 
 @media (max-width: 670px) {
+  .app_podcast {
+    padding: 0rem 2rem;
+  }
+}
 
-    .app_podcast {
-        padding: 0rem 2rem;
-    }
+/* opacity animation */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* this is only needed to prevent wierd height changes when the animation is applied */
+@keyframes pd-animation-in {
+  from {
+    padding-bottom: 0.5rem;
+  }
+  to {
+    padding-bottom: 1rem;
+  }
+}
+
+@keyframes pd-animation-out {
+  from {
+    padding-bottom: 1rem;
+  }
+  to {
+    padding-bottom: 0.5rem;
+  }
 }

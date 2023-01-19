@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text">
-                <p >This website is © everything.fi 2022.</p>
+                <p >This website is © everything.fi 2023.</p>
             </div>
         </footer>
     )
