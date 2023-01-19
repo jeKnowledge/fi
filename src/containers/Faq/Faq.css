@@ -1,0 +1,107 @@
+@import url("https://fonts.cdnfonts.com/css/clash-display");
+@import url("https://fonts.cdnfonts.com/css/Inter");
+
+.app_faq {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 5vh;
+}
+
+.app_faq h1 {
+    text-align: center;
+    font-family: 'Inter', "sans-serif";
+    /* LETTER */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    /* White */
+    color: #FFFFFF;
+
+    margin-top: 40vh;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 4rem;
+    border: 1px solid #FFFFFF;
+    padding: 1rem;
+    margin: 0.6rem 5rem;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    font-family: 'Inter', "sans-serif";
+
+}
+
+
+.question_div h2 {
+    font-family: 'Inter', "sans-serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+.question_div {
+    display: flex;
+}
+
+.question_head {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.button-container p {
+    font-family: 'Inter', "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+}
+
+.button-container {
+    margin-bottom: 1rem;
+}
+
+ .question-container p{
+    font-family: "Inter", "sans-serif";
+}
+
+.question-container.open {
+    height: 6rem;
+}
+
+.question-container p.hide {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    .question-container {
+        margin: 0.6rem 6rem;
+      }
+}
+    
+@media (max-width: 670px) {
+    .question-container {
+        margin: 0.6rem 2rem;
+    }
+}

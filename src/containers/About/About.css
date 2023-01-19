@@ -1,0 +1,27 @@
+.About {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about-text {
+    width: 80%;
+
+    font-weight: 600;
+    font-size: 200%;
+    line-height: 129%;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 670px) {
+    .about-text {
+        width: 85%;
+        font-size: 1.2rem;
+    }
+}
