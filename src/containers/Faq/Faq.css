@@ -81,7 +81,7 @@
     margin-bottom: 1rem;
 }
 
- .question-container p{
+.question-container p {
     font-family: "Inter", "sans-serif";
 }
 
@@ -96,12 +96,13 @@
 
 @media (max-width: 1024px) {
     .question-container {
-        margin: 0.6rem 6rem;
-      }
+        margin: 0.6rem 0rem;
+    }
 }
-    
+
 @media (max-width: 670px) {
-    .question-container {
-        margin: 0.6rem 2rem;
+
+    .app_podcast {
+        padding: 0rem 2rem;
     }
 }

@@ -51,13 +51,12 @@
   overflow: hidden;
   position: relative;
   right: 0px;
-  margin-top: -90vh;
+  margin-top: -110vh;
   bottom: 0px;
-  height: 90vh;
+  height: 110vh;
   z-index: 1;
   background-image: url("../../assets/gradiente_softmiddle.png");
-  background-position: center;
-  background-size: contain;
+  background-position: center right;
   background-repeat: no-repeat;
 
 }
