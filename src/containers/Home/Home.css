@@ -54,7 +54,7 @@ video{
   position: absolute;
   font-style: normal;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 32px;
   line-height: 41px;
 
   margin-top: 15rem;
@@ -63,6 +63,8 @@ video{
   letter-spacing: 0.06em;
   text-transform: uppercase;
   z-index: 2;
+
+  font-family: 'Clash Display';
 }
 
 @media screen and (max-width: 480px) {
