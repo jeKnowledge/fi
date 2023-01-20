@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                 <div className="app_footer_logos">
                     <a href={"https://www.instagram.com/_everything.fi_/"} rel="noreferrer" ><img src={images.insta} alt="insta logo"></img></a>
-                    <a href={"/#"}><img src={images.linkedin} alt="linkedin logo"></img></a>
+                    <a href={"https://www.linkedin.com/company/everythingfi/"}><img src={images.linkedin} alt="linkedin logo"></img></a>
                     <a href={"/#"}><img src={images.spotify} alt="spotify logo"></img></a>
                     <a href={"/#"}><img src={images.tiktok} alt="tiktok logo" /></a>
                     <a href={"/#"}><img src={images.youtube} alt="youtube logo" /></a>
