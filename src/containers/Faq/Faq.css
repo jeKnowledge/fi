@@ -8,6 +8,7 @@
   margin-top: 5vh;
   overflow-wrap: break-word;
   text-align: left;
+  z-index: 100;
 }
 
 .app_faq h1 {
@@ -116,6 +117,19 @@
   -ms-animation: fadeout 0.5s; /* Internet Explorer */
 }
 
+.btnrotate {
+  font-family: "Inter", "sans-serif";
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 2rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+.rotated {
+  transform: rotate(45deg);
+  transition: transform 0.25s ease-in-out;
+}
+
 @media (max-width: 1024px) {
   .question-container {
     padding-left: 1rem;
@@ -146,24 +160,5 @@
   }
   to {
     opacity: 0;
-  }
-}
-
-/* this is only needed to prevent wierd height changes when the animation is applied */
-@keyframes pd-animation-in {
-  from {
-    padding-bottom: 0.5rem;
-  }
-  to {
-    padding-bottom: 1rem;
-  }
-}
-
-@keyframes pd-animation-out {
-  from {
-    padding-bottom: 1rem;
-  }
-  to {
-    padding-bottom: 0.5rem;
   }
 }

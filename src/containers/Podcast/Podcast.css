@@ -30,6 +30,7 @@
 }
 
 .app_podcast {
+  position: relative; 
   padding: 0rem 6rem;
   font-family: "Inter", "sans-serif";
   font-style: normal;
@@ -44,7 +45,7 @@
   height: 170vh;
   display: flex;
   flex-direction: column;
-  z-index: 2; 
+  z-index: 5; 
 }
 
 .bg-gradientfooter {
@@ -62,13 +63,14 @@
   background-size: contain;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  opacity: 0.7;
+  opacity: 0.9;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .color_g {
   /* h4 */
 
-  font-family: 'Clash Display';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;

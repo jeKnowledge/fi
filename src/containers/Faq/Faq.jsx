@@ -14,7 +14,7 @@ function Faq() {
   const [visibleAnswers, setVisibleAnswers] = useState(new Array(questions.length).fill(false));
 
   return (
-    <section className='app_faq'>
+    <div className='app_faq'>
       <h1>FAQS</h1>
       {questions.map((question, i) => (
         <div
@@ -31,25 +31,18 @@ function Faq() {
               <h2>{question.question}</h2>
             </div>
             <div className="button-container">
-              {visibleAnswers[i]
-                ? <span
-                  style={{ cursor: 'pointer', fontWeight: '400' }}
-                  onClick={() => setVisibleAnswers(prevVisibleAnswers => {
-                    prevVisibleAnswers[i] = !prevVisibleAnswers[i];
-                    return [...prevVisibleAnswers];
-                  })}>-</span>
-                : <span
-                  style={{ cursor: 'pointer', fontWeight: '400' }}
-                  onClick={() => setVisibleAnswers(prevVisibleAnswers => {
-                    prevVisibleAnswers[i] = !prevVisibleAnswers[i];
-                    return [...prevVisibleAnswers];
-                  })}>+</span>}
+              <span
+                className={`btnrotate ${visibleAnswers[i] ? 'rotated' : ''}`}
+                onClick={() => setVisibleAnswers(prevVisibleAnswers => {
+                  prevVisibleAnswers[i] = !prevVisibleAnswers[i];
+                  return [...prevVisibleAnswers];
+                })}>+</span>
             </div>
           </div>
           <span className={visibleAnswers[i] ? 'show' : 'hide'}>{question.answer}</span>
         </div>
       ))}
-    </section>
+    </div>
   );
 }
 
