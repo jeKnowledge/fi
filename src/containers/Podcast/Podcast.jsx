@@ -8,7 +8,7 @@ const Podcast = () => {
     return (
         <section className="app_podcast">
             <Fade delay={500}>
-                <h2>HIGHLIGHTS PODCAST</h2>
+                <h1>HIGHLIGHTS PODCAST</h1>
                 <span className='color_g_brev'>BREVEMENTE...</span>
                 <span>Mantenha-se atualizado! Visite as nossas redes sociais e fique a par de tudo o que estamos a planear para si. Siga-nos e aprenda connosco a atingir a estabilidade financeira que tanto procura!</span>
             </Fade>

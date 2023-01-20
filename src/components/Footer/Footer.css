@@ -20,6 +20,18 @@
   position: relative;
 }
 
+.text_footer_header {
+  font-family: 'Clash Display', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: white;
+}
 
 .app_footer_contactos span {
   text-align: left;

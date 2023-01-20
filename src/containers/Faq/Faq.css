@@ -13,10 +13,8 @@
 
 .app_faq h1 {
   text-align: center;
-  font-family: "Inter", "sans-serif";
   /* LETTER */
   font-style: normal;
-  font-weight: 600;
   font-size: 40px;
   line-height: 49px;
   letter-spacing: 0.06em;
