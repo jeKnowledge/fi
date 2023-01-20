@@ -10,24 +10,24 @@ import unselected from "../../assets/unselectedot.svg";
 //Cards Information
 const cards = [
     {
-        title: "CONTROLO DE DESPESAS",
+        title: "Controlo de Despesas",
         text: "O Controlo de Despesas é um aspecto crucial da gestão financeira pessoal. Envolve regularmente o registo, a categorização e a análise dos seus hábitos, permitindo assim que faça uma melhor fiscalização pessoal dos seus gastos e despesas."
     },
     {
-        title: "COMO CONTROLAR O MEU DINHEIRO",
-        text: "O Controlo do Dinheiro envolve tomar decisões inteligentes sobre como poupar, investir e gastar o seu dinheiro, bem como fixar e manter um orçamento, acompanhar as suas despesas."
+        title: "Smart Decisions",
+        text: "Como tomar decisões financeiras informadas e alcançar os seus objetivos, ferramentas e técnicas para controlar despesas e poupar dinheiro"
     },
     {
-        title: "IDEAÇÃO E PSICOLOGIA DE INVESTIMENTOS",
-        text: "A ideação de investimentos envolve a apresentação de ideias e estratégias para investir o teu dinheiro de uma forma que se alinhe com os seus objectivos financeiros e tolerância ao risco."
+        title: "Tipos e Psicologias de Investimentos",
+        text: "Como compreender e escolher os diferentes tipos de investimentos, como equilibrar o risco e o retorno ao investir, e como entender o comportamento humano e os erros comuns em investimentos."
     },
     {
-        title: "COMO SOBREVIVER AO AUMENTO DA INFLAÇÃO",
-        text: "A inflação pode ter um impacto significativo na sua “saúde financeira”. À medida que a taxa de inflação aumenta, o seu dinheiro perde poder de compra, e, consequentemente, precisa de mais dinheiro para comprar as mesmas coisas."
+        title: "Perfil de investidor",
+        text: "Como identificar o teu perfil de investidor e como escolher e adaptar os investimentos à tua tolerância ao risco"
     },
     {
-        title: "ESTADO DA ARTE DA FINTECH",
-        text: "Fintech, também conhecida como tecnologia financeira, é a utilização de tecnologia para melhorar e automatizar serviços financeiros, tais como bancos, pagamentos, empréstimos, e investimentos."
+        title: "Fintech",
+        text: "Como a Fintech, ou seja, tecnologia financeira, e as Startups Fintech estão a mudar como fazemos a gestão das nossas finanças pessoais"
     }
 ]
 
