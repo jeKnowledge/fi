@@ -11,18 +11,23 @@
 #video {
   z-index: -2;
   align-self: center;
+  width: 100%;
+  height: 100%;
+}
+
+video{
+  object-fit: fill;
 }
 
 .wrapperGradient {
   position: relative;
   width: 100%;
   height: 100%;
-
 }
 
 .wrapperGradient::after {
   position: absolute;
-  bottom: -1px; /* Leave this here, line bug */
+  bottom: -2px; /* Leave this here, line bug */
   left: 0;
   width: 100%;
   height: 100%;
