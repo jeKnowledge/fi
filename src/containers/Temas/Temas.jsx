@@ -73,7 +73,7 @@ export default function Temas() {
                         </div>
                         <div className="flex-dots">
                             {cards.map((card, i) => (
-                                <img className="dots" src={currentIndex === i ? selected : unselected} alt={i} onClick={() => onChange(i)} />
+                                <img className="dots" src={currentIndex === i ? selected : unselected} alt={i} key={i} />
                             ))}
                         </div>
                     </>
