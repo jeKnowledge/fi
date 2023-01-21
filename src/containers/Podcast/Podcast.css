@@ -35,7 +35,7 @@
   font-family: "Inter", "sans-serif";
   font-style: normal;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 33px;
   font-weight: 300;
   text-align: center;
   letter-spacing: 0.02em;
@@ -51,9 +51,8 @@
 .bg-gradientfooter {
   overflow: hidden;
   position: relative;
-  margin-right: -30px;
   margin-top: -100vh;
-  bottom: -300px;
+  bottom: -50px;
   height: 100vh;
   z-index: 1;
   background-image: url("../../assets/gradiente_softmiddle.png");

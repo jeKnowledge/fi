@@ -23,7 +23,9 @@
     .about-text {
         width: 85%;
         /* font-size: 16px; */
-        line-height: 105%;
+        line-height: 80%;
+        font-weight: 400;
+
     }
     h3{
         font-size: 1.1rem;

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f53adc3.css",
-    "main.js": "/static/js/main.a0a12130.js",
+    "main.css": "/static/css/main.9ba89348.css",
+    "main.js": "/static/js/main.cc254e79.js",
     "static/media/bg_video.mp4": "/static/media/bg_video.f4b245e256504ff5a6a2.mp4",
     "static/media/gradiente_soft.png": "/static/media/gradiente_soft.6ddbbe4323f25c4c024d.png",
     "static/media/gradiente_softmiddle.png": "/static/media/gradiente_softmiddle.c3e1314f4815c90d10fa.png",
@@ -17,11 +17,11 @@
     "static/media/icon.svg": "/static/media/icon.dedf787a21b62ced06d938ccb23d668c.svg",
     "static/media/unselectedot.svg": "/static/media/unselectedot.cf8bd09f3dca5c18510f41ba6e625e05.svg",
     "static/media/selectedot.svg": "/static/media/selectedot.4a8fd38040865e9a05bb3c15024952b3.svg",
-    "main.7f53adc3.css.map": "/static/css/main.7f53adc3.css.map",
-    "main.a0a12130.js.map": "/static/js/main.a0a12130.js.map"
+    "main.9ba89348.css.map": "/static/css/main.9ba89348.css.map",
+    "main.cc254e79.js.map": "/static/js/main.cc254e79.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f53adc3.css",
-    "static/js/main.a0a12130.js"
+    "static/css/main.9ba89348.css",
+    "static/js/main.cc254e79.js"
   ]
 }
