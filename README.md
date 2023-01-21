@@ -8,8 +8,9 @@ This repository was made to store a mock site for learning purposes and the fina
 - [@NoxCoimbra](https://www.github.com/NoxCoimbra)
 - [@fcallanam](https://www.github.com/fcallanam)
 
-Super Visor (the one who fixes everyhing):
+Supervisors (the ones who fix everyhing):
 - [@edup](https://www.github.com/edup)
+- [@miguelopesantana](https://github.com/miguelopesantana)
 
 ## FAQ
 

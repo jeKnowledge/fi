@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, Footer } from '../../components'
-import { Home, About, Podcast, Temas, Faq } from '../'
+import { Home, About, Podcast, Temas } from '../'
 import Fade from 'react-reveal/Fade';
 
 import './Landing.css'
@@ -11,11 +11,11 @@ function Landing() {
       <Home />
       <Navbar />
       
-      <Fade delay={500}>
+      <Fade delay={400}>
         <About />
       </Fade>
 
-      <Fade delay={500}>
+      <Fade delay={400}>
         <Temas />
       </Fade>
       <Podcast />

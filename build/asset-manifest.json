@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7f53adc3.css",
+    "main.js": "/static/js/main.a0a12130.js",
+    "static/media/bg_video.mp4": "/static/media/bg_video.f4b245e256504ff5a6a2.mp4",
+    "static/media/gradiente_soft.png": "/static/media/gradiente_soft.6ddbbe4323f25c4c024d.png",
+    "static/media/gradiente_softmiddle.png": "/static/media/gradiente_softmiddle.c3e1314f4815c90d10fa.png",
+    "static/media/nei.svg": "/static/media/nei.4fc1e1ec2602cbfb7ebd86da3ff6d6cb.svg",
+    "static/media/jek.svg": "/static/media/jek.0bba38effad37e50ee0a905a0694cd11.svg",
+    "static/media/logo.svg": "/static/media/logo.e02f27e826fcccdc4e592863329b1c77.svg",
+    "static/media/insta.svg": "/static/media/insta.99c7c91a832ff49efe7a3291580f41e9.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.65d00cc65a177fc048db3ac1f78849aa.svg",
+    "static/media/spotify.svg": "/static/media/spotify.aaa434a954f0294f732065278992686b.svg",
+    "static/media/yt.svg": "/static/media/yt.f464969f2ca9b11f1804dbc74b2062cb.svg",
+    "static/media/tiktok.svg": "/static/media/tiktok.9b2d59261e0f3399c3e9d0f7ef272369.svg",
+    "index.html": "/index.html",
+    "static/media/icon.svg": "/static/media/icon.dedf787a21b62ced06d938ccb23d668c.svg",
+    "static/media/unselectedot.svg": "/static/media/unselectedot.cf8bd09f3dca5c18510f41ba6e625e05.svg",
+    "static/media/selectedot.svg": "/static/media/selectedot.4a8fd38040865e9a05bb3c15024952b3.svg",
+    "main.7f53adc3.css.map": "/static/css/main.7f53adc3.css.map",
+    "main.a0a12130.js.map": "/static/js/main.a0a12130.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f53adc3.css",
+    "static/js/main.a0a12130.js"
+  ]
+}
