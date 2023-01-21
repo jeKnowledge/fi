@@ -76,7 +76,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin: 10rem 0 15rem 0;
 }
 
 .grid-logic {
