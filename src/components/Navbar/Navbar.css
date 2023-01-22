@@ -11,7 +11,7 @@
 .navbar img {
     width: 4rem;
     transition: 1s ease;
-    padding-left: 4rem;
+    padding-left: 2rem;
 }
 
 .navbar-logo img:hover {
