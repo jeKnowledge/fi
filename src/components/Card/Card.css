@@ -13,8 +13,6 @@ html {
 }
 
 .card-content {
-    /*padding-left: 30px;
-    padding-right: 30px;*/
     padding: 20px;
     font-weight: 200;
     
@@ -35,7 +33,7 @@ p {
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
 
     text-align: left;
 
@@ -71,14 +69,6 @@ p {
     grid-area: "bot";
 }
 
-.grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10rem 0 15rem 0;
-}
-
 .grid-logic {
     width: 80vw;
     display: grid;
@@ -92,7 +82,17 @@ p {
 
 @media screen and (max-width: 1024px) {
 
-    .card-container {
-        margin: 2rem;
+    .card-container:hover {
+        transform: none;
     }
+
+    .card-container {
+        display: flex;
+        margin: 0 2rem;
+        /* text-align: center; */
+    }
+
+    /* .card-container h3, p{
+        text-align: center;
+    } */
 }

@@ -1,23 +1,39 @@
 @import url("https://fonts.cdnfonts.com/css/clash-display");
 @import url("https://fonts.cdnfonts.com/css/Inter");
 
-.app_podcast h2 {
-  font-family: "Inter", "sans-serif";
+.app_podcast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 45px;
+  position: relative; 
   text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  
+  /* height: 50vh; */
+  
+  font-size: 24px;
+  margin: 10vh 0;
+  
+  z-index: 5; 
 }
 
+.app_podcast p {
+  text-align: center;
+  /* padding: 4rem 0rem; */
+}
+
+.content{
+  width: 80%;
+  max-width: 1200px;
+
+}
 
 .color_g_brev {
   font-weight: 600;
   text-align: center;
-  letter-spacing: 0.05em;
+  font-size: 24px;
+  /* letter-spacing: 0.05em; */
   text-transform: uppercase;
   color: #9FF491;
   margin-top: 2rem;
@@ -25,71 +41,10 @@
 
 }
 
-.app_podcast h1 {
-  padding: 4rem 0rem;
-}
-
-.app_podcast {
-  position: relative; 
-  padding: 0rem 6rem;
-  font-family: "Inter", "sans-serif";
-  font-style: normal;
-  font-size: 24px;
-  line-height: 33px;
-  font-weight: 300;
-  text-align: center;
-  letter-spacing: 0.02em;
-  margin: 5vh 0 30vh 0;
-
-
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  z-index: 5; 
-}
-
-.bg-gradientfooter {
-  overflow: hidden;
-  position: relative;
-  margin-top: -100vh;
-  bottom: -50px;
-  height: 100vh;
-  z-index: 1;
-  background-image: url("../../assets/gradiente_softmiddle.png");
-  background-position: center right;
-  background-repeat: no-repeat;
-  /* contain*/
-  background-size: contain;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  opacity: 0.9;
-  overflow-x: hidden;
-  width: 100%;
-}
-
-.color_g {
-  /* h4 */
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  /* Green */
-
-  color: #9FF491;
-}
-
 
 @media (max-width: 670px) {
-  .app_podcast span {
-    line-height: 19px;
-    font-size: 18px;
-
+  .app_podcast h4 {
+    /* line-height: 19px; */
+    /* font-size: 18px; */
   }
 }

@@ -5,13 +5,15 @@ import Fade from 'react-reveal/Fade';
 const Podcast = () => {
 
     return (
-        <section className="app_podcast">
-            <Fade delay={400}>
-                <h1>HIGHLIGHTS PODCAST</h1>
-                <span className='color_g_brev'>BREVEMENTE...</span>
-                <span>Mantenha-se atualizado! Visite as nossas redes sociais e fique a par de tudo o que estamos a planear para si. Siga-nos e aprenda connosco a atingir a estabilidade financeira que tanto procura!</span>
-            </Fade>
-        </section>
+        <Fade delay={400}>
+            <section className="app_podcast">
+                <div className='content'>
+                    <h1>HIGHLIGHTS PODCAST</h1>
+                    <h4 className='color_g_brev'>BREVEMENTE...</h4>
+                    <p>Mantem-te atualizado! Visita as nossas redes sociais e fica a par de tudo o que estamos a planear para ti.  Segue-nos e aprende connosco a atingir a estabilidade financeira que tanto procuras!</p>
+                </div>
+            </section>
+        </Fade>
     )
 }
 

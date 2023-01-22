@@ -29,7 +29,7 @@
   line-height: 30px;
   /* identical to box height */
 
-  letter-spacing: 0.04em;
+  /* letter-spacing: 0.04em; */
   text-transform: uppercase;
   color: white;
   z-index: 4;

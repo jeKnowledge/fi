@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { useMediaQuery } from 'react-responsive';
 import selected from "../../assets/selectedot.svg";
 import unselected from "../../assets/unselectedot.svg";
+import Fade from 'react-reveal/Fade';
 
 //Cards Information
 const cards = [
@@ -39,58 +40,61 @@ export default function Temas() {
         setCurrentIndex(index);
     }
     return (
-        <section className="Temas">
-            <div className="grid">
-                <div className="theme">
-                    <h1>TEMAS</h1>
-                </div>
-                {isMobile ? (
-                    <>
-                        <div className="carousel-geral">
-                            <Carousel
-                                infiniteLoop={true}
-                                autoPlay={true}
-                                showThumbs={false}
-                                showStatus={false}
-                                showIndicators={false}
-                                emulateTouch={true}
-                                stopOnHover={true}
-                                transitionTime={1000}
-                                interval={20000}
-                                thumbWidth={90}
-                                showArrows={isMobile ? false : true}
-                                style={{ width: "margin-top: 30px" }}
-                                onChange={(index) => onChange(index)}
-                            >
+        <Fade delay={400}>
+            <section className="Temas">
+                <div className="grid">
+                    <div className="title">
+                        <h1>TEMAS</h1>
+                    </div>
+                    {isMobile ? (
+                        <>
+                            <div className="carousel-geral">
+                                <Carousel
+                                    infiniteLoop={true}
+                                    autoPlay={true}
+                                    showThumbs={false}
+                                    showStatus={false}
+                                    showIndicators={false}
+                                    emulateTouch={true}
+                                    stopOnHover={true}
+                                    transitionTime={1000}
+                                    interval={20000}
+                                    thumbWidth={90}
+                                    // dynamicHeight={true}
+                                    showArrows={isMobile ? false : true}
+                                    style={{ width: "margin-top: 30px" }}
+                                    onChange={(index) => onChange(index)}
+                                >
+                                    {cards.map((card, i) => (
+                                        <Card
+                                            id={i + 1}
+                                            title={card.title}
+                                            text={card.text}
+                                        />
+                                    ))}
+                                </Carousel>
+                            </div>
+                            <div className="flex-dots">
                                 {cards.map((card, i) => (
-                                    <Card
-                                        id={i + 1}
-                                        title={card.title}
-                                        text={card.text}
-                                    />
+                                    <img className="dots" src={currentIndex === i ? selected : unselected} alt={i} key={i} />
                                 ))}
-                            </Carousel>
-                        </div>
-                        <div className="flex-dots">
+                            </div>
+                        </>
+                    ) :
+                        <div className="grid-logic">
+
                             {cards.map((card, i) => (
-                                <img className="dots" src={currentIndex === i ? selected : unselected} alt={i} key={i} />
+                                <Card
+                                    key={i}
+                                    id={i + 1}
+                                    title={card.title}
+                                    text={card.text}
+                                />
                             ))}
                         </div>
-                    </>
-                ) :
-                    <div className="grid-logic">
-
-                        {cards.map((card, i) => (
-                            <Card
-                                key={i}
-                                id={i + 1}
-                                title={card.title}
-                                text={card.text}
-                            />
-                        ))}
-                    </div>
-                }
-            </div>
-        </section>
+                    }
+                </div>
+            </section>
+        </Fade>
     )
 }

@@ -17,7 +17,7 @@
   font-style: normal;
   font-size: 40px;
   line-height: 49px;
-  letter-spacing: 0.06em;
+  /* letter-spacing: 0.06em; */
   text-transform: uppercase;
 
   /* White */
@@ -59,7 +59,7 @@
 
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   text-transform: uppercase;
 }
 
@@ -81,7 +81,7 @@
   padding-right: 1rem;
   display: flex;
   align-items: center;
-  letter-spacing: 0.02em;
+  /* letter-spacing: 0.02em; */
 }
 
 .button-container {

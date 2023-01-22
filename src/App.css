@@ -27,5 +27,21 @@ body {
 h1, h2, h3{
   font-family: 'Clash Display';
   font-weight: 600;
+  text-transform: uppercase;
+  line-height: 129%;
+  letter-spacing: 0.1rem;
 }
 
+h1{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 32px;
+}
+
+p{
+  font-family: 'Inter';
+  font-weight: 200;
+  font-size: 20px;
+}

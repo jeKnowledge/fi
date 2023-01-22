@@ -1,11 +1,22 @@
-.theme{
+.Temas{
+    margin: 7vh 0;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
     text-align: center;
 }
 
-.theme h1{
+.title h1{
     font-size: 40px;
     color: #FFFFFF;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .flex-dots {
@@ -14,7 +25,7 @@
     flex-direction: row;
     justify-content: center;
     width: 15vw;
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 
 .dots {
@@ -31,11 +42,16 @@
 
 @media screen and (max-width: 1024px) {
     .carousel-geral{
-        width: 95%;
+        width: 75%;
     }
     .card-container{
         align-items: center;
         align-self: center;
         z-index: 3;
+    }
+}  
+@media screen and (max-width: 480px) {
+    .carousel-geral{
+        width: 95%;
     }
 }  

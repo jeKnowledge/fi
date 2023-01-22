@@ -1,7 +1,6 @@
 import React from 'react'
 import { Navbar, Footer } from '../../components'
 import { Home, About, Podcast, Temas } from '../'
-import Fade from 'react-reveal/Fade';
 
 import './Landing.css'
 
@@ -10,14 +9,8 @@ function Landing() {
     <div className="landing">
       <Home />
       <Navbar />
-      
-      <Fade delay={400}>
-        <About />
-      </Fade>
-
-      <Fade delay={400}>
-        <Temas />
-      </Fade>
+      <About />
+      <Temas />
       <Podcast />
       <div className='bg-gradientfooter'></div>
       <Footer />

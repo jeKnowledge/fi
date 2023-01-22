@@ -1,22 +1,20 @@
 .About {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    margin: 10vh 0;
+}
+
+.About h3{
+    text-transform: none;
 }
 
 .about-text {
     width: 80%;
-
-    font-weight: 600;
-    font-size: 200%;
-    line-height: 129%;
-
+    max-width: 1200px;
+    line-height: 200%;
     text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
 }
 
 @media screen and (max-width: 670px) {
@@ -28,6 +26,6 @@
 
     }
     h3{
-        font-size: 1.1rem;
+        font-size: 20px;
     }
 }
