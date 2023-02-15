@@ -4,5 +4,6 @@ import About from "./About/About";
 import Podcast from "./Podcast/Podcast"
 import Temas from "./Temas/Temas";
 import Faq from "./Faq/Faq";
+import Partners from "./Partners/Partners"
 
-export { Landing, Home, About, Podcast, Temas, Faq }
+export { Landing, Home, About, Podcast, Temas, Faq, Partners }
