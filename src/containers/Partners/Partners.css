@@ -30,7 +30,7 @@
 .app_partners_pack {
    
     margin-top: 7rem;
-    padding: 0rem 6rem;
+    padding: 0rem 5rem;
     
    
 }
@@ -52,3 +52,15 @@
     text-align: left;
     padding: 1rem 2rem;
 }
+
+.app_partners_pack_logos {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.app_partners_pack_logos a {
+    size: 5rem;
+}
+
