@@ -1,0 +1,80 @@
+.Team {
+    display: flex;
+    flex-direction: column;
+    /* background-image: url('../../assets/ya.jpeg'); */
+    background-image: url('../../assets/Group20.png'), url('../../assets/Group82.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+}
+
+.team-gradient {
+}
+
+.team-title {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 5rem;
+}
+
+.team-header {
+    display: flex;
+    justify-content: center;
+
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.team-entities {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.team-entities-logos img {
+    height: 3.5rem;
+    padding: 0rem 1rem;
+}
+
+.team-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 4rem;
+}
+
+.team-cards-pelouro {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-cards-pelouro-name {
+    
+    text-transform: uppercase;
+}
+
+.team-card-component {
+    display: flex;
+}
+
+.team-cards h1 {
+    font-family: "Clash Display", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
