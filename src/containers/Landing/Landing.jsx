@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, Footer } from '../../components'
-import { Home, About, Podcast, Temas,Partners } from '../'
+import { Home, About, Podcast, Temas,Partners,Team,Faq } from '../'
 
 
 import './Landing.css'
@@ -13,7 +13,9 @@ function Landing() {
       <About />
       <Temas />
       <Podcast />
+      <Faq/>
       <Partners/>
+
       <div className='bg-gradientfooter'></div>
       <Footer />
     </div>
