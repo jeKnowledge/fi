@@ -15,6 +15,7 @@ const Programa = () => {
       { title: 'Yet another event', start: '13:00', end: '15:00' },
       { title: 'One more event', start: '16:00', end: '18:00' },
     ],
+  });
 
   
   const handleDayClick = (day) => {
