@@ -4,9 +4,9 @@ import './Faq.css'
 
 function Faq() {
   const [questions] = useState([
-    { question: 'bla bla?', answer: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbla' },
-    { question: 'bla bla?', answer: 'bla bla bla' },
-    { question: 'bla bla?', answer: 'bla bla bla' },
+    { question: 'O que é o Everything-fi?', answer: 'O Everything-fi é uma conferência dedicada à educação financeira e tecnológica para jovens. O evento de dois dias conta com uma extensa programação que inclui workshops práticos, talks inspiradoras, debates estimulantes e atividades lúdicas focadas em tópicos como fintech, web3, criptomoedas e literacia financeira. O objetivo do evento é capacitar os jovens com conhecimento e ferramentas que lhes permitam tomar decisões financeiras conscientes e prepará-los para um futuro cada vez mais digital.' },
+    { question: 'Posso participar mesmo sem saber nada sobre estes tópicos?', answer: 'Sim, o Everything-fi foi criado para ser inclusivo e acessível a todas as pessoas, independentemente do seu nível de conhecimento. Todos os conteúdos do evento, desde as talks às atividades, são desenhados para serem facilmente compreendidos por qualquer um. A nossa missão é proporcionar uma experiência enriquecedora e estimulante para todos os participantes, sejam eles expertos ou completos iniciantes nestas áreas.' },
+    {question: 'Quem pode participar?', answer: 'Qualquer pessoa pode participar do Everything-fi! O evento foi criado para ser inclusivo e acessível a todos, independentemente do nível de conhecimento em finanças e tecnologia.' },
   ]);
 
   // ARRAY DAS RESPOSTAS VAZIO
