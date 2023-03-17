@@ -1,0 +1,52 @@
+.podcast {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+.podcast h1 {
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+
+
+.eps_container {
+    align-items: left;
+    justify-content: left;
+    padding: 4rem 10rem;
+    margin-top: 4rem;
+}
+
+
+.box {
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    padding:2rem;
+    
+}
+
+.episode {
+    margin-top:2rem;
+    display: flex;
+
+
+}
+
+.ep_socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    margin: 0 5rem;
+}
+
+.ep_socials img {
+    cursor: pointer;
+}
