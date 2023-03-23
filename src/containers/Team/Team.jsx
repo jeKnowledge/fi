@@ -3,64 +3,108 @@ import { images, team } from '../../constants'
 import { Card } from '../../components'
 import './Team.css'
 
+
+const direcao = {
+  "edu": { name: "Eduardo Nunes", text: "Coordenador", pic: team.edu },
+  "santana": { name: "Miguel Santana", text: "Coordenador", pic: team.santana }
+}
+
+const imagem = {
+  "sofia": { name: "Ana Sofia", text: "Coordenadora", pic: team.ana },
+  "bernardo": { name: "Bernardo Arzileiro", text: "Colaborador", pic: team.benny },
+  "barbara": { name: "Bárbara Teixeira", text: "Colaborador", pic: team.barbara },
+  "vasco": { name: "Vasco Bastos", text: "Colaborador", pic: team.bastos }
+}
+
+const informatica = {
+  "hugo": { name: "Hugo Barros", text: "Colaborador", pic: team.hugo },
+  "pedro": { name: "Pedro Coimbra", text: "Colaborador", pic: team.coimbra }
+}
+
+const logistica = {
+  "carnide": { name: "João Carnide", text: "Coordenador", pic: team.carnide },
+  "carlos": { name: "Carlos Matos", text: "Colaborador", pic: team.carlos },
+  "magueijo": { name: "Mariana Magueijo", text: "Colaborador", pic: team.magueijo }
+}
+
+const marketing = {
+  "rita": { name: "Ana Oliveira", text: "Coordenador", pic: team.rita },
+  "carolina": { name: "Carolina Roma", text: "Colaborador", pic: team.roma },
+  "mafralda": { name: "Mafalda Figueiredo", text: "Colaborador", pic: team.mafralda }
+}
+
+const parcerias = {
+  "lucasanjo": { name: "Lucas Anjo", text: "Coordenador", pic: team.anjo },
+  "planes": { name: "André Silva", text: "Colaborador", pic: team.edu },
+  "nuno": { name: "Nuno Tiago", text: "Colaborador", pic: team.nuno },
+  "pato": { name: "Rodrigo Pato", text: "Colaborador", pic: team.pato }
+}
+
+const podcast = {
+  "carolinares": { name: "Carolina Resende", text: "Colaborador", pic: team.resende },
+  "soph": { name: "Sofia Yankova", text: "Colaborador", pic: team.soph }
+}
+
+const tesouraria = {
+  "meireles": { name: "Sofia Meireles", text: "Tesoureira", pic: team.meireles }
+}
+
+
 function Team() {
-    return (
-        <div className="Team">
-            <div className="team-gradient" />
 
-            <section className='team-title'>
-                <div />
-                <div className="team-header">
-                    conhece a nossa equipa!
-                </div>
-                <div className="team-entities">
-                    entidades envolvidas
-                    <div className="team-entities-logos">
-                        <img src={images.jek_logo} alt="jek_logo" />
-                        <img src={images.nei_logo} alt="nei_logo" />
-                    </div>
-                </div>
-            </section>
+  const pelouros = [
+    { title: 'DIREÇÃO', data: direcao },
+    { title: 'IMAGEM', data: imagem },
+    { title: 'INFORMÁTICA', data: informatica },
+    { title: 'LOGÍSTICA', data: logistica },
+    { title: 'MARKETING E COMUNICAÇÃO', data: marketing },
+    { title: 'PARCERIAS', data: parcerias },
+    { title: 'PODCAST', data: podcast },
+    { title: 'TESOURARIA', data: tesouraria }
+  ];
 
-            <section className="team-cards">
-                <div className="team-pelouro">
-                    <h1>DIREÇÃO</h1>
-                    <div className="team-card-component">
-                        <Card name='Eduardo Nunes' text='Coordenador' pic={team.edu} />
-                        <Card name='Miguel Santana' text='Coordenador' pic={team.santana} />
-                    </div>
-                </div>
-                <div className="team-imagem">
-                    <h1>IMAGEM</h1>
-                    <div className="team-card-component">
-                        <Card name='Ana Sofia' text='Coordenador' pic={team.santana} />
-                        <Card name='Bernardo Arzileiro' text='Coordenador' pic={team.edu} />
-                        <Card name='Bárbara Teixeira' text='Coordenador' pic={team.edu} />
-                        <Card name='Vasco Bastos' text='Coordenador' pic={team.edu} />
-                    </div>
-                </div>
-                {/* Insert Team Cards here */}
-                <div className="team-informatica">
-                    <h1>INFORMÁTICA</h1>
-                    <div className="team-card-component">
-                        <Card name='Hugo Barros' text='Coordenador' pic={team.edu} />
-                        <Card name='Pedro Coimbra' text='Coordenador' pic={team.edu} />
-                    </div>
-                </div>
-                {/* Insert Team Cards here */}
-                <h1>lOGÍSTICA</h1>
-                {/* Insert Team Cards here */}
-                <h1>MARKETING E COMUNICAÇÃO</h1>
-                {/* Insert Team Cards here */}
-                <h1>PARCERIAS</h1>
-                {/* Insert Team Cards here */}
-                <h1>PODCAST</h1>
-                {/* Insert Team Cards here */}
-                <h1>TESOURARIA</h1>
-                {/* Insert Team Cards here */}
-            </section>
+  return (
+    <div className="Team" id='topo'>
+      <div className="team-gradient" />
+
+      <section className='team-title'>
+        <div />
+        <div className="team-header">
+          conhece a nossa equipa!
         </div>
-    )
+        <div className="team-entities">
+          entidades envolvidas
+          <div className="team-entities-logos">
+            <img src={images.jek_logo} alt="jek_logo" />
+            <img src={images.nei_logo} alt="nei_logo" />
+          </div>
+        </div>
+      </section>
+
+      <section className="team-cards">
+        {pelouros.map((pelouro, index) => (
+          <div className="team-pelouro" key={index}>
+            <h1>{pelouro.title}</h1>
+            <div className="team-card-component">
+              {Object.keys(pelouro.data).map((key, index) => (
+                <Card
+                  name={pelouro.data[key].name}
+                  text={pelouro.data[key].text}
+                  pic={pelouro.data[key].pic}
+                  key={index}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <div className="team-backtotop">
+        <a href="#top">voltar ao topo da página</a>
+        <div className="arrow" />
+      </div>
+    </div>
+  )
 }
 
 export default Team
