@@ -10,10 +10,10 @@ const direcao = {
 }
 
 const imagem = {
-  "sofia": { name: "Ana Sofia", text: "Coordenadora", pic: team.ana },
+  "vasco": { name: "Vasco Bastos", text: "Coordenador", pic: team.bastos },
+  "sofia": { name: "Ana Sofia", text: "Colaboradora", pic: team.ana },
   "bernardo": { name: "Bernardo Arzileiro", text: "Colaborador", pic: team.benny },
-  "barbara": { name: "Bárbara Teixeira", text: "Colaborador", pic: team.barbara },
-  "vasco": { name: "Vasco Bastos", text: "Colaborador", pic: team.bastos }
+  "barbara": { name: "Bárbara Teixeira", text: "Colaboradora", pic: team.barbara }
 }
 
 const informatica = {
@@ -24,13 +24,13 @@ const informatica = {
 const logistica = {
   "carnide": { name: "João Carnide", text: "Coordenador", pic: team.carnide },
   "carlos": { name: "Carlos Matos", text: "Colaborador", pic: team.carlos },
-  "magueijo": { name: "Mariana Magueijo", text: "Colaborador", pic: team.magueijo }
+  "magueijo": { name: "Mariana Magueijo", text: "Colaboradora", pic: team.magueijo }
 }
 
 const marketing = {
-  "rita": { name: "Ana Oliveira", text: "Coordenador", pic: team.rita },
-  "carolina": { name: "Carolina Roma", text: "Colaborador", pic: team.roma },
-  "mafralda": { name: "Mafalda Figueiredo", text: "Colaborador", pic: team.mafralda }
+  "rita": { name: "Ana Oliveira", text: "Coordenadora", pic: team.rita },
+  "carolina": { name: "Carolina Roma", text: "Colaboradora", pic: team.roma },
+  "mafralda": { name: "Mafalda Figueiredo", text: "Colaboradora", pic: team.mafralda }
 }
 
 const parcerias = {
@@ -41,8 +41,8 @@ const parcerias = {
 }
 
 const podcast = {
-  "carolinares": { name: "Carolina Resende", text: "Colaborador", pic: team.resende },
-  "soph": { name: "Sofia Yankova", text: "Colaborador", pic: team.soph }
+  "carolinares": { name: "Carolina Resende", text: "Colaboradora", pic: team.resende },
+  "soph": { name: "Sofia Yankova", text: "Colaboradora", pic: team.soph }
 }
 
 const tesouraria = {
