@@ -12,9 +12,9 @@ function Landing() {
       <Navbar />
       <About />
       <Temas />
+      <Faq />
       <Podcast />
       <Programa/>
-      <Faq/>
       <Partners/>
 
       <div className='bg-gradientfooter'></div>
