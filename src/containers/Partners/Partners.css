@@ -1,0 +1,66 @@
+
+
+.app_partners {
+    display:flex;
+    flex-direction: column;
+    background-color: transparent;
+    overflow-wrap: break-word;
+    text-align: center;
+    z-index: 100;
+    margin-top: 5rem;
+}
+
+.app_partners h1 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    /* White */
+
+    color: #FFFFFF;
+
+}
+
+
+.app_partners_pack {
+   
+    margin-top: 7rem;
+    padding: 0rem 5rem;
+    
+   
+}
+
+.app_partners_pack h1 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    text-align: left;
+    padding: 1rem 2rem;
+}
+
+.app_partners_pack_logos {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.app_partners_pack_logos a {
+    size: 5rem;
+}
+

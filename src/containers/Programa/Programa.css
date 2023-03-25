@@ -1,0 +1,124 @@
+.app_programa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app_programa h1{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    /* White */
+
+    color: #FFFFFF;
+  } 
+  .app_programa_dia {
+    display: flex;
+    gap:2rem;
+    margin: 5rem;
+  }
+
+  
+
+
+  
+  .day-box {
+    padding: 0.5rem 2rem;
+    position: relative;
+    
+    
+    /* White */
+    
+  }
+
+  .day-box p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 30px;
+    /* identical to box height, or 94% */
+
+    letter-spacing: 0.02em;
+
+    /* White */
+
+    color: #FFFFFF;
+  }
+
+
+  
+  .selected {
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+  }
+  
+  .grid {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: flex-start;
+    
+  }
+  
+  .time {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 30px;
+    /* or 94% */
+
+    letter-spacing: 0.02em;
+
+    /* White */
+
+    color: #FFFFFF;
+    
+  }
+  
+  .events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+  }
+ 
+  
+  .event {
+    background: #111A26;
+    /* White */
+    width: 60rem;
+    
+    display: flex;
+    border-top: 1px solid #FFFFFF;
+    overflow: hidden;
+    border-bottom: 1px solid #FFFFFF;
+
+  }
+
+  .event p {
+    margin: 0rem 2rem;
+    border: 2px solid #FFFFFF;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .empty_event {
+    display:flex;
+    border-top: 1px solid #FFFFFF;
+    width: 60rem;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  

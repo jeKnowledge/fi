@@ -5,6 +5,7 @@ import Podcast from "./Podcast/Podcast"
 import Temas from "./Temas/Temas";
 import Faq from "./Faq/Faq";
 import Podcasts from "./Podcasts/Podcasts";
+import Partners from "./Partners/Partners"
+import Programa from "./Programa/Programa"
 
-
-export { Landing, Home, About, Podcasts, Temas, Faq }
+export { Landing, Home, About, Podcast, Temas, Faq, Partners , Programa, Podcasts}
