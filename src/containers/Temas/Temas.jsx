@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../../components/Card/Card";
+import TeamCard from "../../components/TeamCard/TeamCard";
 import "./Temas.css"
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -66,7 +66,7 @@ export default function Temas() {
                                 onChange={(index, item) => onChange(index, item)}
                             >
                                 {cards.map((card, i) => (
-                                    <Card
+                                    <TeamCard
                                         id={i + 1}
                                         title={card.title}
                                         text={card.text}
@@ -84,7 +84,7 @@ export default function Temas() {
                     <div className="grid-logic">
 
                         {cards.map((card, i) => (
-                            <Card
+                            <TeamCard
                                 key={i}
                                 id={i + 1}
                                 title={card.title}

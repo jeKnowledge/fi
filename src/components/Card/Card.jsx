@@ -1,4 +1,4 @@
-import  React,{ useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import "./Card.css"
 
 function Card({ pic, name, text }) {
@@ -25,12 +25,12 @@ function Card({ pic, name, text }) {
         <div className="card-pic" ref={imagemRef} style={{ zIndex: imagemZIndex }} onClick={handleClickImagem} >
           <img src={pic} alt='team-member' />
         </div>
-
-        <div className="card-text" ref={descricaoRef} style={{ zIndex: descricaoZIndex }} onClick={handleClickDescricao}>
-          <h3>{name}</h3>
-          <p>{text}</p>
-        </div>
-
+        {/* <div className="card-fade"> */}
+          <div className="card-text" ref={descricaoRef} style={{ zIndex: descricaoZIndex }} onClick={handleClickDescricao}>
+            <h3>{name}</h3>
+            <p>{text}</p>
+          </div>
+        {/* </div> */}
       </div>
     </div>
   )

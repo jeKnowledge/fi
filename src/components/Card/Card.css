@@ -64,6 +64,24 @@ p {
     margin: 0 0 0 1rem;
 }
 
+.card-fade {
+    position: absolute;
+    opacity: 1;
+    animation-name: fade-in;
+    animation-duration: .7s;
+    animation-fill-mode: both;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 @media screen and (max-width: 1024px) {
     .card-container {
