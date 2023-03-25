@@ -6,4 +6,5 @@ import Temas from "./Temas/Temas";
 import Faq from "./Faq/Faq";
 import Podcasts from "./Podcasts/Podcasts";
 
+
 export { Landing, Home, About, Podcasts, Temas, Faq }

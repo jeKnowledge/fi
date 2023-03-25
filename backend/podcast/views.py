@@ -12,14 +12,15 @@ def get_all_podcasts(request):
     for podcast in podcasts:
         podcast_dict = {
             'name': podcast.name,
+            
             'description': podcast.description,
             'time': podcast.time.strftime('%Y-%m-%d %H:%M:%S'),
             'youtube_link': podcast.youtube_link,
             'spotify_link': podcast.spotify_link,
-            'guest': podcast.guest
+            'guests': podcast.guests
         }
-        if podcast.image:
-            podcast_dict['image'] = podcast.image.url
+        if podcast.image_link:
+            podcast_dict['image'] = podcast.image_link
         podcast_list.append(podcast_dict)
     return JsonResponse({'podcasts': podcast_list})
 
@@ -38,10 +39,10 @@ def post_a_podcast(request):
         name = request.POST.get('name')
         description = request.POST.get('description')
         time = request.POST.get('time')
-        image = request.POST.get('image')
+        image_link = request.POST.get('image_link')
         youtube_link = request.POST.get('youtube_link')
         spotify_link = request.POST.get('spotify_link')
-        guest = request.POST.get('guest')
-        podcast = Podcast(name=name, description=description, time=time, image=image, youtube_link=youtube_link, spotify_link=spotify_link, guest=guest)
+        guests = request.POST.get('guests')
+        podcast = Podcast(name=name, description=description, time=time, image_link=image_link, youtube_link=youtube_link, spotify_link=spotify_link, guests=guests)
         podcast.save()
         return JsonResponse({'message': 'Podcast created successfully'})

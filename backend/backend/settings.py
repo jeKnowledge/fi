@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'podcast'
 ]
 
-
+USE_TZ = False
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

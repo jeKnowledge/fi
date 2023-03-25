@@ -9,7 +9,13 @@ function Podcasts() {
     const [podcasts, setPodcasts] = useState([]);
     const [mostRecentPodcast, setMostRecentPodcast] = useState(null);
 
-    const [expanded, setExpanded] = useState({});
+    const [expanded, setExpanded] = useState(false);
+
+    function handleExpand() {
+      setExpanded(!expanded);
+    }
+
+    
 
     useEffect(() => {
         async function fetchPodcasts() {
@@ -29,7 +35,7 @@ function Podcasts() {
         fetchPodcasts();
     }, []);
 
-
+    
     
 
     return ( 
@@ -40,7 +46,9 @@ function Podcasts() {
         <div className='eps_container'>
           <h2>Ultimo episódio</h2>
           <div className='episode box'>
-
+            <div className="ep_img">
+              <img href={mostRecentPodcast.image} alt="ep_img"/>
+            </div>
             <div className="ep_info">
             <h3>{mostRecentPodcast.name}</h3>
             <p>{mostRecentPodcast.description}</p>
@@ -53,23 +61,30 @@ function Podcasts() {
         </div>
       )}
 
-      <div className='eps_container'>
-        <h2>Todos os episódios</h2>
-        {podcasts.map((podcast) => (
-          <div key={podcast.id} className="episode box">
-            <div className="ep_info">
-            <h3>{mostRecentPodcast.name}</h3>
-            <p>{mostRecentPodcast.description}</p>
+        <div className='eps_container'>
+          <h2>Todos os episódios</h2>
+          {podcasts.map((podcast) => (
+            <div key={podcast.id} className='episode box'>
+              <div className='ep_info'>
+                <h3>{podcast.name}</h3>
+                <p>{podcast.description}</p>
+              </div>
+              <div className='ep_socials'>
+                <img src={images.spotify} href={podcast.spotify_link} />
+                <img src={images.youtube} href={podcast.youtube_link} />
+                <button onClick={handleExpand}>+</button>
+              </div>
+              {expanded &&
+              <div className='expanded_info'>
+                <p>HOOLALALALAL</p>
+              </div>
+            }
             </div>
-          <div className="ep_socials">
-            <img src = {images.spotify} href= {mostRecentPodcast.spotify_link}/>
-            <img src = {images.youtube} href= {mostRecentPodcast.youtube_link}/>
-          </div>
-          </div>
-        ))}
-      </div>
+          ))}
+          
+        </div>
     </div>
-  );
+     );
 }
 
 export default Podcasts;
