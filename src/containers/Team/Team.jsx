@@ -17,8 +17,9 @@ const imagem = {
 }
 
 const informatica = {
+  "pedro": { name: "Pedro Coimbra", text: "Colaborador", pic: team.coimbra },
   "hugo": { name: "Hugo Barros", text: "Colaborador", pic: team.hugo },
-  "pedro": { name: "Pedro Coimbra", text: "Colaborador", pic: team.coimbra }
+  
 }
 
 const logistica = {
