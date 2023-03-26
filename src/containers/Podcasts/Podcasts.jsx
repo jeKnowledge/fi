@@ -7,7 +7,7 @@ import images from '../../constants';
 function Podcasts() {
 
   const [podcasts, setPodcasts] = useState([]);
-  const [mostRecentPodcast, setMostRecentPodcast] = useState(null);
+  const [mostRecentPodcast, setMostRecentPodcast] = useState([]);
 
   const [expanded, setExpanded] = useState([]);
 
@@ -24,9 +24,10 @@ function Podcasts() {
           setPodcasts(data.podcasts);
 
           // Get the most recent podcast from the data
-          const mostRecent = data.podcasts[0];
+          const mostRecent = data.podcasts[data.podcasts.length - 1];
           setMostRecentPodcast(mostRecent);
-
+          console.log(mostRecent)
+          console.log(mostRecentPodcast.guests && mostRecentPodcast.guests.map(guest => guest.name).join(" e "))
           // Initialize expanded state for each box to false
           setExpanded(new Array(data.podcasts.length).fill(false));
       }
@@ -44,13 +45,13 @@ function Podcasts() {
         <div className='episode box'>
         <div className="small_box">   
           <div className="ep_img">
-            <img href="//imgur.com/a/cGM3ZIL"  alt="ep_img"/>
+            <img src = {mostRecentPodcast.image}  alt="ep_img"/>
           </div>
           <div className="ep_info">
           <h3>{mostRecentPodcast.name}</h3>
           <p>{mostRecentPodcast.description}</p>
           <p>Convidados:</p>
-           <p className="guests_name">{mostRecentPodcast.guests}</p>
+           <p className="guests_name">{mostRecentPodcast.guests && mostRecentPodcast.guests.map(guest => guest.name).join(" e ")}</p>
           </div>
         <div className="ep_socials">
           <img src = {images.spotify} href= {mostRecentPodcast.spotify_link}/>
@@ -60,7 +61,18 @@ function Podcasts() {
         </div>
         {expanded[0] &&
             <div className='expanded_info'>
-              <p>HOOLALALALAL</p>
+              {mostRecentPodcast.guests.map((guest, index) => (
+                <div key={guest.id} className='guest guest_box'>
+                      <div className="guest_info">
+                        <h1>{guest.name}</h1>
+                        <p>{guest.description}</p>
+                        <img src={images.linkedin} href={guest.socials} />
+                        </div>
+                        <div className="guest_img">
+                          <img src={guest.photo_link} alt="guest_img"/>
+                          </div>
+                  </div>
+              ))}
             </div>
           }
         </div>
@@ -73,13 +85,13 @@ function Podcasts() {
           <div key={podcast.id} className='episode box'>
             <div className="small_box">            
             <div className="ep_img">
-            <img href="//imgur.com/a/cGM3ZIL"  alt="ep_img"/>
+            <img src= {podcast.image}  alt="ep_img"/>
           </div>
             <div className='ep_info'>
               <h3>{podcast.name}</h3>
               <p>{podcast.description}</p>
               <p>Convidados:</p>
-              <p className='guests_name'>{podcast.guests}</p>
+              <p className='guests_name'>{mostRecentPodcast.guests && mostRecentPodcast.guests.map(guest => guest.name).join(" e ")}</p>
             </div>
             <div className='ep_socials'>
               <img src={images.spotify} href={podcast.spotify_link} />
@@ -89,7 +101,18 @@ function Podcasts() {
             </div>
             {expanded[index+1] &&
             <div className='expanded_info'>
-              <p>HOOLALALALAL</p>
+              {podcast.guests.map((guest, index) => (
+                <div key={guest.id} className='guest guest_box'>
+                      <div className="guest_info">
+                        <h1>{guest.name}</h1>
+                        <p>{guest.description}</p>
+                        <img src={images.linkedin} href={guest.socials} />
+                        </div>
+                        <div className="guest_img">
+                          <img src={guest.photo_link} alt="guest_img"/>
+                          </div>
+                  </div>
+              ))}
             </div>
           }
           </div>

@@ -31,15 +31,18 @@ function Faq() {
               <h2>{question.question}</h2>
             </div>
             <div className="button-container">
-              <span
-                className={`btnrotate ${visibleAnswers[i] ? 'rotated' : ''}`}
-                onClick={() => setVisibleAnswers(prevVisibleAnswers => {
-                  prevVisibleAnswers[i] = !prevVisibleAnswers[i];
-                  return [...prevVisibleAnswers];
-                })}>+</span>
+            <span
+              
+              onClick={() => setVisibleAnswers(prevVisibleAnswers => {
+                prevVisibleAnswers[i] = !prevVisibleAnswers[i];
+                return [...prevVisibleAnswers];
+              })}
+            >
+              {visibleAnswers[i] ? '-' : '+'}
+            </span>
             </div>
           </div>
-          <span className={visibleAnswers[i] ? 'show' : 'hide'}>{question.answer}</span>
+          <span className={`faq_answer ${visibleAnswers[i] ? 'show' : 'hide'}`} >{question.answer}</span>
         </div>
       ))}
     </div>

@@ -46,10 +46,10 @@
 }
 
 .eps_container {
-    width: 60vw;
+    width: 80vw;
     align-items: left;
     justify-content: left;
-    padding: 4rem 16rem;
+    
     margin-top: 4rem;
 }
 
@@ -57,7 +57,8 @@
 .box {
     box-sizing: border-box;
     border: 1px solid #FFFFFF;
-    padding:2rem;
+    padding: 2rem 3rem;
+
     
 }
 
@@ -65,20 +66,29 @@
     margin-top:2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+  
+
 
 }
 .small_box {
     display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width:100%
+   
 }
 
+.small_box h3 {
+    margin-top: 0
+}
 .ep_socials {
     display: flex;
     flex-direction: column;
     gap:1rem;
-    margin: 0 5rem;
+   
     justify-content: center;
     align-items: center;
+    
 }
 
 .ep_socials img {
@@ -92,9 +102,73 @@ span {
     cursor: pointer;
     
 }
-
-
+.ep_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ep_info p {
+    padding-bottom: 0.5rem;
+}
 .expanded_info {
     display:flex;
+    padding-top: 4rem;
+    height: auto;
+    gap: 2rem;
     
+}
+
+
+.guest {
+    display:flex;
+
+}
+
+.guest_box {
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    overflow: hidden;
+    max-width: 25vw;
+}
+.guest_info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: left;
+}
+
+.guest_info h1 {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FFFFFF;
+    flex-grow: 1.2;
+    }
+.guest_info p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    padding-bottom: 1rem;
+    /* White */
+
+    color: #FFFFFF;
+}
+.guest_info img {
+    width: 2rem;
+    height:2rem;
+    cursor: pointer;
+}
+
+.guest_img {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
