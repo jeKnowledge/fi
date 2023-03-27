@@ -56,7 +56,7 @@ function Podcasts() {
         <div className="ep_socials">
           <img src = {images.spotify} href= {mostRecentPodcast.spotify_link}/>
           <img src = {images.youtube} href= {mostRecentPodcast.youtube_link}/>
-          <span onClick={() => handleExpand(0)}>+</span>
+          <span onClick={() => handleExpand(0)}>{expanded[0] ? '-' : '+'}</span>
         </div>
         </div>
         {expanded[0] &&
@@ -96,7 +96,7 @@ function Podcasts() {
             <div className='ep_socials'>
               <img src={images.spotify} href={podcast.spotify_link} />
               <img src={images.youtube} href={podcast.youtube_link} />
-              <span onClick={() => handleExpand(index+1)}>+</span>
+              <span onClick={() => handleExpand(index+1)}>{expanded[index + 1] ? '-' : '+'}</span>
             </div>
             </div>
             {expanded[index+1] &&

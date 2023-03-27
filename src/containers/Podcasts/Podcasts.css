@@ -135,6 +135,7 @@ span {
     flex-direction: column;
     padding: 1rem;
     text-align: left;
+ 
 }
 
 .guest_info h1 {
@@ -171,4 +172,5 @@ span {
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 50%;
 }
