@@ -34,7 +34,7 @@ const cards = [
 
 export default function Temas() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const isMobile = useMediaQuery({ query: '(max-width: 1024px)' })
+    const isMobile = useMediaQuery({ query: '(max-width: 1248px)' })
 
     const onChange = (index) => {
         setCurrentIndex(index);

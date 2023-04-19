@@ -67,6 +67,34 @@ video{
   font-family: 'Clash Display';
 }
 
+.inscricao {
+  position:absolute;
+  margin-top: 26rem;
+  z-index: 2;
+  background-color: transparent;
+  border: 2px solid #fff;
+ 
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  
+  }
+
+.inscricao a {
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.inscricao:hover {
+  background-color: rgba(159, 244, 145, 0.5);
+}
 @media screen and (max-width: 480px) {
 
   /* for small screens make sure it fills the height */
