@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   background-color: transparent;
-  margin-top: 5vh;
+  margin-top: 10vh;
   overflow-wrap: break-word;
   text-align: left;
   z-index: 100;
@@ -22,8 +22,8 @@
 
   /* White */
   color: #ffffff;
-
-  margin-top: 40vh;
+  
+  
 }
 
 .question-container {
@@ -40,7 +40,7 @@
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
   font-family: "Inter", "sans-serif";
-
+  cursor: pointer;
   /* apply fadein animation to the question-container */
   animation: fadein 0.5s;
   -webkit-animation: fadein 0.5s; /* Safari and Chrome */
@@ -50,7 +50,7 @@
 }
 
 .question_div h2 {
-  font-family: "Inter", "sans-serif";
+  font-family: 'Clash Display';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -59,8 +59,13 @@
 
   display: flex;
   align-items: center;
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  /* White */
+
+  color: #FFFFFF;
+
 }
 
 .question_div {
@@ -72,16 +77,21 @@
 }
 
 .button-container p {
-  font-family: "Inter", "sans-serif";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 39px;
   /* identical to box height */
-  padding-right: 1rem;
+
   display: flex;
   align-items: center;
-  /* letter-spacing: 0.02em; */
+  letter-spacing: 0.02em;
+
+  /* white */
+
+  color: #FFFFFF;
+
 }
 
 .button-container {
@@ -91,10 +101,10 @@
   justify-content: center;
 }
 
-.question-container span {
+.plus_minus{
   font-family: "Inter", "sans-serif";
   font-weight: 200;
-  padding-bottom: 0.5rem;
+  font-size: 40px;
 }
 
 .question-container.open {
@@ -115,28 +125,72 @@
   -ms-animation: fadeout 0.5s; /* Internet Explorer */
 }
 
-.btnrotate {
-  font-family: "Inter", "sans-serif";
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 2rem;
-  transition: transform 0.4s ease-in-out;
-}
 
-.rotated {
-  transform: rotate(45deg);
-  transition: transform 0.25s ease-in-out;
+
+.faq_answer {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  /* or 125% */
+
+  letter-spacing: 0.02em;
+
+  /* White */
+
+  color: #FFFFFF;
+
 }
 
 @media (max-width: 1024px) {
+
+  .question-container.open {
+    height: auto;
+    max-height: 30rem;
+  }
+  
   .question-container {
     padding-left: 1rem;
     padding-right: 1rem;
-    margin: 0.6rem 0rem;
+    
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width:800px) {
+    .question_div h2 {
+      font-size: 20px;
+      line-height: 22px;
+    }
+    .plus_minus {
+      font-size: 30px;
+    }
+}
+
+@media (max-width: 675px) {
+   .question_div h2 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+   
+  .faq_answer {
+    
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      /* or 125% */
+    
+      letter-spacing: 0.02em;
+    
+      /* White */
+    
+      color: #FFFFFF;
+    
+    
+  }
+
   .app_podcast {
     padding: 0rem 2rem;
   }

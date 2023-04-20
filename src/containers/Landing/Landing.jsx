@@ -11,7 +11,6 @@ function Landing() {
       <Navbar />
       <About />
       <Temas />
-      <Podcast />
       <Faq/>
       <div className='bg-gradientfooter'></div>
       <Footer />

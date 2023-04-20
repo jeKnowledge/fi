@@ -27,9 +27,6 @@
     
     padding: 0.4rem 0.8rem;
     cursor: pointer;
-}
-
-.inscricao_nav a {
     font-family: 'Clash Display';
     font-style: normal;
     font-weight: 600;
@@ -41,7 +38,9 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-decoration: none;
-  }
+}
+
+
 
 
 .inscricao_nav:hover {

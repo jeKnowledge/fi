@@ -11,11 +11,12 @@ const Navbar = () => {
             <img src={images.icon} alt="navbar_icon" />
           </div>
           <div >
-          <button
-            className="inscricao_nav">
-                <a href='https://lu.ma/everything.fi'  rel="noreferrer" target={"_blank"} >Inscrições
-                    </a>
-                </button>
+            <a href='https://lu.ma/everything.fi' target='_blank' rel='noreferrer'>
+              <button className='inscricao_nav' >
+                Inscrições
+              </button>
+            </a>
+
           </div>
           {/* <div className="navbar-pt-en">
             <a href='/#' style={{ fontWeight: 500, borderBottom: "1px solid white" }}>PT</a>

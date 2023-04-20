@@ -12,11 +12,15 @@ function Home() {
                 literacia financeira simplificada
                 
             </div>
-            <button
+          <div
             className="inscricao">
-                <a href='https://lu.ma/everything.fi'  rel="noreferrer" target={"_blank"} >Inscrições
-                    </a>
+                <a href='https://lu.ma/everything.fi' target='_blank' rel='noreferrer'>
+                <button className='inscricao_nav' >
+                    Inscrições
                 </button>
+                </a>
+          
+            </div>  
             <div className='wrapperGradient'>
                 <video src={images.bg_video} id='video' loop autoPlay muted alt="background video"/>
             </div>
